@@ -1,0 +1,2089 @@
+{smcl}
+{txt}{sf}{ul off}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout 6cities1prov yogyatosleman.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 8 Dec 2023, 09:26:44
+{txt}
+{com}. 
+. **filtering respiratory disease related only from BPJS K sample dataset diag-primer FKL17
+. 
+. use "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\Data Sampel Final 2022\Reguler\202103_fkrtl.dta"
+{txt}(BPJS Kesehatan 2021 FKRTL - created:  9 Dec 2022 09:33:49)
+
+{com}. desc
+
+{txt}Contains data from {res}D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\Data Sampel Final 2022\Reguler\202103_fkrtl.dta
+{txt} Observations:{res}       872,201                  BPJS Kesehatan 2021 FKRTL - created:  9 Dec 2022
+                                                09:33:49
+{txt}    Variables:{res}            55                  9 Dec 2022 09:33
+{txt}{hline}
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+{hline}
+{p 0 48}{res}{bind:PSTV01         }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Nomor peserta{p_end}
+{p 0 48}{bind:PSTV02         }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Nomor keluarga{p_end}
+{p 0 48}{bind:PSTV15         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Bobot{p_end}
+{p 0 48}{bind:FKP02          }{txt}{bind: str16   }{bind:{txt}%16s      }{space 1}{bind:         }{bind:  }{res}{res}No Asal Rujukan (ID Kunjungan FKTP){p_end}
+{p 0 48}{bind:FKL02          }{txt}{bind: str16   }{bind:{txt}%16s      }{space 1}{bind:         }{bind:  }{res}{res}ID Kunjungan{p_end}
+{p 0 48}{bind:FKL03          }{txt}{bind: int     }{bind:{txt}%td       }{space 1}{bind:         }{bind:  }{res}{res}Tanggal datang kunjungan FKRTL{p_end}
+{p 0 48}{bind:FKL04          }{txt}{bind: int     }{bind:{txt}%td       }{space 1}{bind:         }{bind:  }{res}{res}Tanggal pulang kunjungan FKRTL{p_end}
+{p 0 48}{bind:FKL05          }{txt}{bind: byte    }{bind:{txt}%26.0g    }{space 1}{bind:FKL05    }{bind:  }{res}{res}Provinsi FKRTL{p_end}
+{p 0 48}{bind:FKL06          }{txt}{bind: int     }{bind:{txt}%26.0g    }{space 1}{bind:FKL06    }{bind:  }{res}{res}Kabupaten/Kota FKRTL{p_end}
+{p 0 48}{bind:FKL07          }{txt}{bind: byte    }{bind:{txt}%19.0g    }{space 1}{bind:FKL07    }{bind:  }{res}{res}Kepemilikan FKRTL{p_end}
+{p 0 48}{bind:FKL08          }{txt}{bind: byte    }{bind:{txt}%14.0g    }{space 1}{bind:FKL08    }{bind:  }{res}{res}Jenis FKRTL{p_end}
+{p 0 48}{bind:FKL09          }{txt}{bind: byte    }{bind:{txt}%28.0g    }{space 1}{bind:FKL09    }{bind:  }{res}{res}Tipe FKRTL{p_end}
+{p 0 48}{bind:FKL10          }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:FKL10    }{bind:  }{res}{res}Tingkat Pelayanan FKRTL{p_end}
+{p 0 48}{bind:FKL11          }{txt}{bind: int     }{bind:{txt}%8.0g     }{space 1}{bind:FKL11    }{bind:  }{res}{res}Jenis Poli FKRTL{p_end}
+{p 0 48}{bind:FKL12          }{txt}{bind: byte    }{bind:{txt}%13.0g    }{space 1}{bind:FKL12    }{bind:  }{res}{res}Segmen Peserta saat akses layanan FKRTL{p_end}
+{p 0 48}{bind:FKL13          }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:FKL13    }{bind:  }{res}{res}Kelas rawat saat peserta mengakses pelayanan kesehatan di FKRTL{p_end}
+{p 0 48}{bind:FKL14          }{txt}{bind: byte    }{bind:{txt}%12.0g    }{space 1}{bind:FKL14    }{bind:  }{res}{res}Status pulang dari FKRTL{p_end}
+{p 0 48}{bind:FKL15          }{txt}{bind: int     }{bind:{txt}%189.0g   }{space 1}{bind:fkl15    }{bind:  }{res}{res}Kode dan nama diagnosis masuk ICD 10 (3 digit){p_end}
+{p 0 48}{bind:FKL15A         }{txt}{bind: str3    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode diagnosis masuk ICD 10 (3 digit){p_end}
+{p 0 48}{bind:FKL16          }{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode ICD 10 diagnosis masuk FKRTL (3-6digit){p_end}
+{p 0 48}{bind:FKL16A         }{txt}{bind: strL    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Nama diagnosis masuk FKRTL (3-6digit){p_end}
+{p 0 48}{bind:FKL17          }{txt}{bind: int     }{bind:{txt}%127.0g   }{space 1}{bind:fkl17    }{bind:  }{res}{res}Kode dan nama diagnosis primer ICD 10 (3 digit){p_end}
+{p 0 48}{bind:FKL17A         }{txt}{bind: str3    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode diagnosis primer ICD 10 (3 digit){p_end}
+{p 0 48}{bind:FKL18          }{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode ICD 10 diagnosis primer FKRTL (3-6digit){p_end}
+{p 0 48}{bind:FKL18A         }{txt}{bind: strL    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Nama diagnosis primer FKRTL (3-6digit){p_end}
+{p 0 48}{bind:FKL19          }{txt}{bind: str10   }{bind:{txt}%10s      }{space 1}{bind:         }{bind:  }{res}{res}Kode INACBGs{p_end}
+{p 0 48}{bind:FKL19A         }{txt}{bind: strL    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Deskripsi kode INACBGs{p_end}
+{p 0 48}{bind:FKL20          }{txt}{bind: byte    }{bind:{txt}%39.0g    }{space 1}{bind:FKL20    }{bind:  }{res}{res}INACBGs - Kode Casemix main groups (Digit ke-1){p_end}
+{p 0 48}{bind:FKL21          }{txt}{bind: byte    }{bind:{txt}%31.0g    }{space 1}{bind:FKL21    }{bind:  }{res}{res}INACBGs - Tipe kelompok kasus atau case groups (Digit ke-2){p_end}
+{p 0 48}{bind:FKL22          }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}INACBGs - Spesifikasi kelompok kasus (Digit ke-3){p_end}
+{p 0 48}{bind:FKL23          }{txt}{bind: byte    }{bind:{txt}%32.0g    }{space 1}{bind:FKL23    }{bind:  }{res}{res}INACBGs - Tingkat keparahan kelompok kasus(Digit ke-4){p_end}
+{p 0 48}{bind:FKL25          }{txt}{bind: byte    }{bind:{txt}%26.0g    }{space 1}{bind:FKL25    }{bind:  }{res}{res}Provinsi faskes perujuk{p_end}
+{p 0 48}{bind:FKL26          }{txt}{bind: int     }{bind:{txt}%26.0g    }{space 1}{bind:FKL26    }{bind:  }{res}{res}Kabupaten/Kota faskes perujuk{p_end}
+{p 0 48}{bind:FKL27          }{txt}{bind: byte    }{bind:{txt}%13.0g    }{space 1}{bind:FKL27    }{bind:  }{res}{res}Kepemilikan faskes perujuk{p_end}
+{p 0 48}{bind:FKL28          }{txt}{bind: byte    }{bind:{txt}%14.0g    }{space 1}{bind:FKL28    }{bind:  }{res}{res}Jenis faskes perujuk{p_end}
+{p 0 48}{bind:FKL29          }{txt}{bind: byte    }{bind:{txt}%25.0g    }{space 1}{bind:FKL29    }{bind:  }{res}{res}Tipe faskes perujuk{p_end}
+{p 0 48}{bind:FKL30          }{txt}{bind: strL    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Jenis prosedur{p_end}
+{p 0 48}{bind:FKL31          }{txt}{bind: byte    }{bind:{txt}%10.0g    }{space 1}{bind:FKL31    }{bind:  }{res}{res}Tarif regional INACBGs{p_end}
+{p 0 48}{bind:FKL32          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Group Tarif INACBGs{p_end}
+{p 0 48}{bind:FKL33          }{txt}{bind: str11   }{bind:{txt}%11s      }{space 1}{bind:         }{bind:  }{res}{res}Kode special sub-acute groups (SA){p_end}
+{p 0 48}{bind:FKL34          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Tarif special sub-acute groups (SA){p_end}
+{p 0 48}{bind:FKL35          }{txt}{bind: str9    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode special procedures (SP){p_end}
+{p 0 48}{bind:FKL36          }{txt}{bind: str49   }{bind:{txt}%49s      }{space 1}{bind:         }{bind:  }{res}{res}Deskripsi special procedures (SP){p_end}
+{p 0 48}{bind:FKL37          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Tarif special procedures (SP){p_end}
+{p 0 48}{bind:FKL38          }{txt}{bind: str9    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode special prosthesis (RR){p_end}
+{p 0 48}{bind:FKL39          }{txt}{bind: str27   }{bind:{txt}%27s      }{space 1}{bind:         }{bind:  }{res}{res}Deskripsi special prosthesis (RR){p_end}
+{p 0 48}{bind:FKL40          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Tarif special prosthesis (RR){p_end}
+{p 0 48}{bind:FKL41          }{txt}{bind: str9    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode special investigation(SI){p_end}
+{p 0 48}{bind:FKL42          }{txt}{bind: str39   }{bind:{txt}%39s      }{space 1}{bind:         }{bind:  }{res}{res}Deskripsi special investigation(SI){p_end}
+{p 0 48}{bind:FKL43          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Tarif special investigation(SI){p_end}
+{p 0 48}{bind:FKL44          }{txt}{bind: str8    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode special drugs (SD){p_end}
+{p 0 48}{bind:FKL45          }{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}Deskripsi special drugs (SD){p_end}
+{p 0 48}{bind:FKL46          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Tarif special drugs (SD){p_end}
+{p 0 48}{bind:FKL47          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Biaya Tagih - oleh fasilitas kesehatan (provider){p_end}
+{p 0 48}{bind:FKL48          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Biaya Verifikasi - BPJS Kesehatan setelah dilakukan verifikasi{p_end}
+{txt}{hline}
+Sorted by: 
+
+{com}. 
+. keep if FKL17 == 11 | FKL17 == 12 |     FKL17 == 13 | FKL17 == 14 |     FKL17 == 15 | FKL17 == 194 | FKL17 == 683 |     FKL17 == 684 |  FKL17 == 685 |  FKL17 == 686 |  FKL17 == 687 |  FKL17 == 688 |  FKL17 == 689 |  FKL17 == 691 |  FKL17 == 692 |  FKL17 == 693 |  FKL17 == 694 |  FKL17 == 695 |  FKL17 == 696 |  FKL17 == 697 |  FKL17 == 699 |  FKL17 == 700 |  FKL17 == 701 |  FKL17 == 702 |  FKL17 == 703 |  FKL17 == 704 |  FKL17 == 705 |  FKL17 == 706 |  FKL17 == 707 |  FKL17 == 708 |  FKL17 == 709 |  FKL17 == 710 |  FKL17 == 711 |  FKL17 == 712 |  FKL17 == 713 |  FKL17 == 714 |  FKL17 == 715 |  FKL17 == 716 |  FKL17 == 717 |  FKL17 == 718 |  FKL17 == 719 |  FKL17 == 720 |  FKL17 == 725 |  FKL17 == 728 |  FKL17 == 729 |  FKL17 == 730 |  FKL17 == 731 |  FKL17 == 732 |  FKL17 == 734 |  FKL17 == 735 |  FKL17 == 736 |  FKL17 == 737 |  FKL17 == 738 |  FKL17 == 740 |  FKL17 == 741 |  FKL17 == 742 |  FKL17 == 743 |  FKL17 == 744 
+{txt}(854,157 observations deleted)
+
+{com}. 
+. codebook FKL17
+
+{txt}{hline}
+{res}FKL17{right:Kode dan nama diagnosis primer ICD 10 (3 digit)}
+{txt}{hline}
+
+{col 19}Type: Numeric ({res}int{txt})
+{ralign 22:Label}: {res:fkl17}
+
+{col 18}Range: [{res}11{txt},{res}744{txt}]{col 55}Units: {res}1
+{col 10}{txt}Unique values: {res}55{col 51}{txt}Missing .: {res}0{txt}/{res}18,044
+
+{txt}{ralign 23: Examples:}{col 25}{res}686{col 31}{txt}J03 Acute tonsillitis
+{ralign 23: }{col 25}{res}699{col 31}{txt}J18 Pneumonia, organism unspecified
+{ralign 23: }{col 25}{res}704{col 31}{txt}J31 Chronic rhinitis, nasopharyngitis and pharyngitis
+{ralign 23: }{col 25}{res}717{col 31}{txt}J44 Other chronic obstructive pulmonary disease
+
+{com}. 
+. save "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory diag-primeronly.dta", replace
+{txt}{p 0 4 2}
+file {bf}
+D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory diag-primeronly.dta{rm}
+saved
+{p_end}
+
+{com}. 
+. su PSTV15
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 6}PSTV15 {c |}{res}     18,044    73.27617    141.5179    .548387   6466.232
+{txt}
+{com}. 
+. **export to excel, keep some cities/districts diag-in FKL17
+. 
+. ta FKL06
+
+      {txt}Kabupaten/Kota FKRTL {c |}      Freq.     Percent        Cum.
+{hline 27}{c +}{hline 35}
+                  SIMEULUE {c |}{res}         27        0.15        0.15
+{txt}              ACEH SINGKIL {c |}{res}         25        0.14        0.29
+{txt}              ACEH SELATAN {c |}{res}         13        0.07        0.36
+{txt}             ACEH TENGGARA {c |}{res}         32        0.18        0.54
+{txt}                ACEH TIMUR {c |}{res}         26        0.14        0.68
+{txt}               ACEH TENGAH {c |}{res}         25        0.14        0.82
+{txt}                ACEH BARAT {c |}{res}         12        0.07        0.89
+{txt}                ACEH BESAR {c |}{res}         23        0.13        1.01
+{txt}                     PIDIE {c |}{res}         66        0.37        1.38
+{txt}                   BIREUEN {c |}{res}         47        0.26        1.64
+{txt}                ACEH UTARA {c |}{res}          1        0.01        1.65
+{txt}           ACEH BARAT DAYA {c |}{res}         27        0.15        1.80
+{txt}                 GAYO LUES {c |}{res}         24        0.13        1.93
+{txt}              ACEH TAMIANG {c |}{res}         16        0.09        2.02
+{txt}                NAGAN RAYA {c |}{res}         16        0.09        2.11
+{txt}                 ACEH JAYA {c |}{res}         22        0.12        2.23
+{txt}              BENER MERIAH {c |}{res}         10        0.06        2.28
+{txt}                PIDIE JAYA {c |}{res}         12        0.07        2.35
+{txt}           KOTA BANDA ACEH {c |}{res}         88        0.49        2.84
+{txt}               KOTA SABANG {c |}{res}         24        0.13        2.97
+{txt}               KOTA LANGSA {c |}{res}         32        0.18        3.15
+{txt}          KOTA LHOKSEUMAWE {c |}{res}         73        0.40        3.55
+{txt}         KOTA SUBULUSSALAM {c |}{res}         18        0.10        3.65
+{txt}                      NIAS {c |}{res}         11        0.06        3.71
+{txt}          MANDAILING NATAL {c |}{res}         13        0.07        3.79
+{txt}          TAPANULI SELATAN {c |}{res}          2        0.01        3.80
+{txt}           TAPANULI TENGAH {c |}{res}         14        0.08        3.87
+{txt}            TAPANULI UTARA {c |}{res}         26        0.14        4.02
+{txt}              TOBA SAMOSIR {c |}{res}         14        0.08        4.10
+{txt}              LABUHAN BATU {c |}{res}         34        0.19        4.28
+{txt}                    ASAHAN {c |}{res}         40        0.22        4.51
+{txt}                SIMALUNGUN {c |}{res}         15        0.08        4.59
+{txt}                     DAIRI {c |}{res}         25        0.14        4.73
+{txt}                      KARO {c |}{res}         14        0.08        4.80
+{txt}              DELI SERDANG {c |}{res}         71        0.39        5.20
+{txt}                   LANGKAT {c |}{res}         36        0.20        5.40
+{txt}        HUMBANG HASUNDUTAN {c |}{res}          9        0.05        5.45
+{txt}             PAKPAK BHARAT {c |}{res}          1        0.01        5.45
+{txt}                   SAMOSIR {c |}{res}         10        0.06        5.51
+{txt}           SERDANG BEDAGAI {c |}{res}         13        0.07        5.58
+{txt}                 BATU BARA {c |}{res}          5        0.03        5.61
+{txt}        PADANG LAWAS UTARA {c |}{res}          9        0.05        5.66
+{txt}              PADANG LAWAS {c |}{res}          8        0.04        5.70
+{txt}      LABUHAN BATU SELATAN {c |}{res}         13        0.07        5.77
+{txt}        LABUHAN BATU UTARA {c |}{res}         10        0.06        5.83
+{txt}              KOTA SIBOLGA {c |}{res}         28        0.16        5.99
+{txt}        KOTA TANJUNG BALAI {c |}{res}         21        0.12        6.10
+{txt}     KOTA PEMATANG SIANTAR {c |}{res}         40        0.22        6.32
+{txt}        KOTA TEBING TINGGI {c |}{res}         25        0.14        6.46
+{txt}                KOTA MEDAN {c |}{res}        280        1.55        8.01
+{txt}               KOTA BINJAI {c |}{res}         83        0.46        8.47
+{txt}      KOTA PADANGSIDIMPUAN {c |}{res}         60        0.33        8.81
+{txt}         KOTA GUNUNGSITOLI {c |}{res}         18        0.10        8.91
+{txt}        KEPULAUAN MENTAWAI {c |}{res}          1        0.01        8.91
+{txt}           PESISIR SELATAN {c |}{res}         13        0.07        8.98
+{txt}                     SOLOK {c |}{res}         12        0.07        9.05
+{txt}                 SIJUNJUNG {c |}{res}         11        0.06        9.11
+{txt}               TANAH DATAR {c |}{res}         24        0.13        9.24
+{txt}           PADANG PARIAMAN {c |}{res}         14        0.08        9.32
+{txt}                      AGAM {c |}{res}         24        0.13        9.45
+{txt}           LIMA PULUH KOTA {c |}{res}          3        0.02        9.47
+{txt}                   PASAMAN {c |}{res}         18        0.10        9.57
+{txt}             SOLOK SELATAN {c |}{res}          9        0.05        9.62
+{txt}               DHARMASRAYA {c |}{res}         11        0.06        9.68
+{txt}             PASAMAN BARAT {c |}{res}         28        0.16        9.84
+{txt}               KOTA PADANG {c |}{res}        160        0.89       10.72
+{txt}                KOTA SOLOK {c |}{res}         33        0.18       10.91
+{txt}          KOTA SAWAH LUNTO {c |}{res}         21        0.12       11.02
+{txt}       KOTA PADANG PANJANG {c |}{res}         28        0.16       11.18
+{txt}          KOTA BUKITTINGGI {c |}{res}         48        0.27       11.44
+{txt}           KOTA PAYAKUMBUH {c |}{res}         19        0.11       11.55
+{txt}             KOTA PARIAMAN {c |}{res}         38        0.21       11.76
+{txt}          KUANTAN SINGINGI {c |}{res}         14        0.08       11.84
+{txt}            INDRAGIRI HULU {c |}{res}         16        0.09       11.93
+{txt}           INDRAGIRI HILIR {c |}{res}         21        0.12       12.04
+{txt}                 PELALAWAN {c |}{res}         36        0.20       12.24
+{txt}                      SIAK {c |}{res}          4        0.02       12.26
+{txt}                    KAMPAR {c |}{res}         18        0.10       12.36
+{txt}                ROKAN HULU {c |}{res}         48        0.27       12.63
+{txt}                 BENGKALIS {c |}{res}         35        0.19       12.82
+{txt}               ROKAN HILIR {c |}{res}         14        0.08       12.90
+{txt}         KEPULAUAN MERANTI {c |}{res}          1        0.01       12.91
+{txt}            KOTA PEKANBARU {c |}{res}        245        1.36       14.27
+{txt}                KOTA DUMAI {c |}{res}         20        0.11       14.38
+{txt}                  MERANGIN {c |}{res}         30        0.17       14.54
+{txt}                SAROLANGUN {c |}{res}         35        0.19       14.74
+{txt}               BATANG HARI {c |}{res}         12        0.07       14.80
+{txt}               MUARO JAMBI {c |}{res}          8        0.04       14.85
+{txt}      TANJUNG JABUNG TIMUR {c |}{res}          8        0.04       14.89
+{txt}      TANJUNG JABUNG BARAT {c |}{res}         12        0.07       14.96
+{txt}                      TEBO {c |}{res}         11        0.06       15.02
+{txt}                     BUNGO {c |}{res}         30        0.17       15.19
+{txt}                KOTA JAMBI {c |}{res}         66        0.37       15.55
+{txt}         KOTA SUNGAI PENUH {c |}{res}         15        0.08       15.63
+{txt}         OGAN KOMERING ULU {c |}{res}         32        0.18       15.81
+{txt}        OGAN KOMERING ILIR {c |}{res}         22        0.12       15.93
+{txt}                MUARA ENIM {c |}{res}         34        0.19       16.12
+{txt}                     LAHAT {c |}{res}         12        0.07       16.19
+{txt}                MUSI RAWAS {c |}{res}         39        0.22       16.40
+{txt}            MUSI BANYUASIN {c |}{res}         20        0.11       16.52
+{txt}                 BANYUASIN {c |}{res}         22        0.12       16.64
+{txt} OGAN KOMERING ULU SELATAN {c |}{res}          4        0.02       16.66
+{txt}   OGAN KOMERING ULU TIMUR {c |}{res}         22        0.12       16.78
+{txt}                 OGAN ILIR {c |}{res}         25        0.14       16.92
+{txt}              EMPAT LAWANG {c |}{res}         11        0.06       16.98
+{txt}          MUSI RAWAS UTARA {c |}{res}         12        0.07       17.05
+{txt}            KOTA PALEMBANG {c |}{res}        253        1.40       18.45
+{txt}           KOTA PRABUMULIH {c |}{res}         31        0.17       18.62
+{txt}           KOTA PAGAR ALAM {c |}{res}         17        0.09       18.72
+{txt}         KOTA LUBUKLINGGAU {c |}{res}         75        0.42       19.13
+{txt}          BENGKULU SELATAN {c |}{res}         24        0.13       19.26
+{txt}             REJANG LEBONG {c |}{res}         22        0.12       19.39
+{txt}            BENGKULU UTARA {c |}{res}         20        0.11       19.50
+{txt}                      KAUR {c |}{res}         10        0.06       19.55
+{txt}                    SELUMA {c |}{res}          3        0.02       19.57
+{txt}                  MUKOMUKO {c |}{res}          6        0.03       19.60
+{txt}                    LEBONG {c |}{res}          9        0.05       19.65
+{txt}                 KEPAHIANG {c |}{res}         14        0.08       19.73
+{txt}           BENGKULU TENGAH {c |}{res}          3        0.02       19.75
+{txt}             KOTA BENGKULU {c |}{res}         91        0.50       20.25
+{txt}             LAMPUNG BARAT {c |}{res}          4        0.02       20.27
+{txt}                 TANGGAMUS {c |}{res}         12        0.07       20.34
+{txt}           LAMPUNG SELATAN {c |}{res}         12        0.07       20.41
+{txt}             LAMPUNG TIMUR {c |}{res}          5        0.03       20.43
+{txt}            LAMPUNG TENGAH {c |}{res}         48        0.27       20.70
+{txt}             LAMPUNG UTARA {c |}{res}         43        0.24       20.94
+{txt}                 WAY KANAN {c |}{res}         21        0.12       21.05
+{txt}              TULANGBAWANG {c |}{res}         19        0.11       21.16
+{txt}                 PESAWARAN {c |}{res}          3        0.02       21.18
+{txt}                 PRINGSEWU {c |}{res}         78        0.43       21.61
+{txt}                    MESUJI {c |}{res}          5        0.03       21.64
+{txt}       TULANG BAWANG BARAT {c |}{res}          5        0.03       21.66
+{txt}             PESISIR BARAT {c |}{res}          1        0.01       21.67
+{txt}       KOTA BANDAR LAMPUNG {c |}{res}        155        0.86       22.53
+{txt}                KOTA METRO {c |}{res}         88        0.49       23.02
+{txt}                    BANGKA {c |}{res}         42        0.23       23.25
+{txt}                  BELITUNG {c |}{res}         14        0.08       23.33
+{txt}              BANGKA BARAT {c |}{res}          6        0.03       23.36
+{txt}             BANGKA TENGAH {c |}{res}         16        0.09       23.45
+{txt}            BANGKA SELATAN {c |}{res}          1        0.01       23.45
+{txt}            BELITUNG TIMUR {c |}{res}          1        0.01       23.46
+{txt}       KOTA PANGKAL PINANG {c |}{res}         33        0.18       23.64
+{txt}                   KARIMUN {c |}{res}         29        0.16       23.80
+{txt}                    BINTAN {c |}{res}         22        0.12       23.92
+{txt}                    NATUNA {c |}{res}         17        0.09       24.02
+{txt}                    LINGGA {c |}{res}          6        0.03       24.05
+{txt}         KEPULAUAN ANAMBAS {c |}{res}          6        0.03       24.09
+{txt}                KOTA BATAM {c |}{res}        174        0.96       25.05
+{txt}       KOTA TANJUNG PINANG {c |}{res}         26        0.14       25.19
+{txt}          KEPULAUAN SERIBU {c |}{res}          1        0.01       25.20
+{txt}      KOTA JAKARTA SELATAN {c |}{res}        101        0.56       25.76
+{txt}        KOTA JAKARTA TIMUR {c |}{res}        239        1.32       27.08
+{txt}        KOTA JAKARTA PUSAT {c |}{res}         68        0.38       27.46
+{txt}        KOTA JAKARTA BARAT {c |}{res}         72        0.40       27.86
+{txt}        KOTA JAKARTA UTARA {c |}{res}        108        0.60       28.46
+{txt}                     BOGOR {c |}{res}        222        1.23       29.69
+{txt}                  SUKABUMI {c |}{res}        118        0.65       30.34
+{txt}                   CIANJUR {c |}{res}         65        0.36       30.70
+{txt}                   BANDUNG {c |}{res}        106        0.59       31.29
+{txt}                     GARUT {c |}{res}         63        0.35       31.64
+{txt}               TASIKMALAYA {c |}{res}         30        0.17       31.81
+{txt}                    CIAMIS {c |}{res}         36        0.20       32.01
+{txt}                  KUNINGAN {c |}{res}         77        0.43       32.43
+{txt}                   CIREBON {c |}{res}        161        0.89       33.32
+{txt}                MAJALENGKA {c |}{res}         58        0.32       33.65
+{txt}                  SUMEDANG {c |}{res}         37        0.21       33.85
+{txt}                 INDRAMAYU {c |}{res}        116        0.64       34.49
+{txt}                    SUBANG {c |}{res}         51        0.28       34.78
+{txt}                PURWAKARTA {c |}{res}        103        0.57       35.35
+{txt}                  KARAWANG {c |}{res}        269        1.49       36.84
+{txt}                    BEKASI {c |}{res}         97        0.54       37.38
+{txt}             BANDUNG BARAT {c |}{res}         59        0.33       37.70
+{txt}               PANGANDARAN {c |}{res}          9        0.05       37.75
+{txt}                KOTA BOGOR {c |}{res}         72        0.40       38.15
+{txt}             KOTA SUKABUMI {c |}{res}        128        0.71       38.86
+{txt}              KOTA BANDUNG {c |}{res}        292        1.62       40.48
+{txt}              KOTA CIREBON {c |}{res}        152        0.84       41.32
+{txt}               KOTA BEKASI {c |}{res}         97        0.54       41.86
+{txt}                KOTA DEPOK {c |}{res}        114        0.63       42.49
+{txt}               KOTA CIMAHI {c |}{res}        126        0.70       43.19
+{txt}          KOTA TASIKMALAYA {c |}{res}         86        0.48       43.67
+{txt}               KOTA BANJAR {c |}{res}         36        0.20       43.86
+{txt}                   CILACAP {c |}{res}         49        0.27       44.14
+{txt}                  BANYUMAS {c |}{res}        129        0.71       44.85
+{txt}               PURBALINGGA {c |}{res}         50        0.28       45.13
+{txt}              BANJARNEGARA {c |}{res}         49        0.27       45.40
+{txt}                   KEBUMEN {c |}{res}         90        0.50       45.90
+{txt}                 PURWOREJO {c |}{res}         68        0.38       46.28
+{txt}                  WONOSOBO {c |}{res}         36        0.20       46.48
+{txt}                  MAGELANG {c |}{res}         17        0.09       46.57
+{txt}                  BOYOLALI {c |}{res}         37        0.21       46.77
+{txt}                    KLATEN {c |}{res}         73        0.40       47.18
+{txt}                 SUKOHARJO {c |}{res}         55        0.30       47.48
+{txt}                  WONOGIRI {c |}{res}         24        0.13       47.62
+{txt}               KARANGANYAR {c |}{res}         15        0.08       47.70
+{txt}                    SRAGEN {c |}{res}         46        0.25       47.95
+{txt}                  GROBOGAN {c |}{res}         27        0.15       48.10
+{txt}                     BLORA {c |}{res}         29        0.16       48.27
+{txt}                   REMBANG {c |}{res}          9        0.05       48.32
+{txt}                      PATI {c |}{res}         61        0.34       48.65
+{txt}                     KUDUS {c |}{res}         70        0.39       49.04
+{txt}                    JEPARA {c |}{res}         24        0.13       49.17
+{txt}                     DEMAK {c |}{res}         42        0.23       49.41
+{txt}                  SEMARANG {c |}{res}         50        0.28       49.68
+{txt}                TEMANGGUNG {c |}{res}         25        0.14       49.82
+{txt}                    KENDAL {c |}{res}         18        0.10       49.92
+{txt}                    BATANG {c |}{res}         53        0.29       50.22
+{txt}                PEKALONGAN {c |}{res}         28        0.16       50.37
+{txt}                  PEMALANG {c |}{res}         49        0.27       50.64
+{txt}                     TEGAL {c |}{res}         33        0.18       50.83
+{txt}                    BREBES {c |}{res}         50        0.28       51.10
+{txt}             KOTA MAGELANG {c |}{res}         61        0.34       51.44
+{txt}            KOTA SURAKARTA {c |}{res}        101        0.56       52.00
+{txt}             KOTA SALATIGA {c |}{res}         40        0.22       52.22
+{txt}             KOTA SEMARANG {c |}{res}        194        1.08       53.30
+{txt}           KOTA PEKALONGAN {c |}{res}         42        0.23       53.53
+{txt}                KOTA TEGAL {c |}{res}         28        0.16       53.69
+{txt}               KULON PROGO {c |}{res}         12        0.07       53.75
+{txt}                    BANTUL {c |}{res}         48        0.27       54.02
+{txt}              GUNUNG KIDUL {c |}{res}         22        0.12       54.14
+{txt}                    SLEMAN {c |}{res}         68        0.38       54.52
+{txt}           KOTA YOGYAKARTA {c |}{res}         40        0.22       54.74
+{txt}                   PACITAN {c |}{res}          7        0.04       54.78
+{txt}                  PONOROGO {c |}{res}         22        0.12       54.90
+{txt}                TRENGGALEK {c |}{res}         12        0.07       54.97
+{txt}               TULUNGAGUNG {c |}{res}         33        0.18       55.15
+{txt}                    BLITAR {c |}{res}         10        0.06       55.20
+{txt}                    KEDIRI {c |}{res}         63        0.35       55.55
+{txt}                    MALANG {c |}{res}         57        0.32       55.87
+{txt}                  LUMAJANG {c |}{res}         35        0.19       56.06
+{txt}                    JEMBER {c |}{res}        105        0.58       56.64
+{txt}                BANYUWANGI {c |}{res}         61        0.34       56.98
+{txt}                 BONDOWOSO {c |}{res}         15        0.08       57.07
+{txt}                 SITUBONDO {c |}{res}         29        0.16       57.23
+{txt}               PROBOLINGGO {c |}{res}         11        0.06       57.29
+{txt}                  PASURUAN {c |}{res}         49        0.27       57.56
+{txt}                  SIDOARJO {c |}{res}        146        0.81       58.37
+{txt}                 MOJOKERTO {c |}{res}         40        0.22       58.59
+{txt}                   JOMBANG {c |}{res}         43        0.24       58.83
+{txt}                   NGANJUK {c |}{res}         53        0.29       59.12
+{txt}                    MADIUN {c |}{res}         11        0.06       59.18
+{txt}                   MAGETAN {c |}{res}         11        0.06       59.24
+{txt}                     NGAWI {c |}{res}         10        0.06       59.30
+{txt}                BOJONEGORO {c |}{res}         49        0.27       59.57
+{txt}                     TUBAN {c |}{res}         23        0.13       59.70
+{txt}                  LAMONGAN {c |}{res}         14        0.08       59.78
+{txt}                    GRESIK {c |}{res}         38        0.21       59.99
+{txt}                 BANGKALAN {c |}{res}         43        0.24       60.23
+{txt}                   SAMPANG {c |}{res}         13        0.07       60.30
+{txt}                 PAMEKASAN {c |}{res}         25        0.14       60.44
+{txt}                   SUMENEP {c |}{res}         23        0.13       60.56
+{txt}               KOTA KEDIRI {c |}{res}         96        0.53       61.10
+{txt}               KOTA BLITAR {c |}{res}         17        0.09       61.19
+{txt}               KOTA MALANG {c |}{res}        128        0.71       61.90
+{txt}          KOTA PROBOLINGGO {c |}{res}         28        0.16       62.05
+{txt}             KOTA PASURUAN {c |}{res}          9        0.05       62.10
+{txt}            KOTA MOJOKERTO {c |}{res}         25        0.14       62.24
+{txt}               KOTA MADIUN {c |}{res}         40        0.22       62.46
+{txt}             KOTA SURABAYA {c |}{res}        220        1.22       63.68
+{txt}                 KOTA BATU {c |}{res}         22        0.12       63.81
+{txt}                PANDEGLANG {c |}{res}          7        0.04       63.84
+{txt}                     LEBAK {c |}{res}         47        0.26       64.10
+{txt}                 TANGERANG {c |}{res}         92        0.51       64.61
+{txt}                    SERANG {c |}{res}         51        0.28       64.90
+{txt}            KOTA TANGERANG {c |}{res}        180        1.00       65.89
+{txt}              KOTA CILEGON {c |}{res}         34        0.19       66.08
+{txt}               KOTA SERANG {c |}{res}        117        0.65       66.73
+{txt}    KOTA TANGERANG SELATAN {c |}{res}         58        0.32       67.05
+{txt}                  JEMBRANA {c |}{res}         49        0.27       67.32
+{txt}                   TABANAN {c |}{res}         50        0.28       67.60
+{txt}                    BADUNG {c |}{res}         88        0.49       68.09
+{txt}                   GIANYAR {c |}{res}        240        1.33       69.42
+{txt}                 KLUNGKUNG {c |}{res}         60        0.33       69.75
+{txt}                    BANGLI {c |}{res}         57        0.32       70.07
+{txt}               KARANG ASEM {c |}{res}         12        0.07       70.13
+{txt}                  BULELENG {c |}{res}         58        0.32       70.46
+{txt}             KOTA DENPASAR {c |}{res}        186        1.03       71.49
+{txt}              LOMBOK BARAT {c |}{res}         21        0.12       71.60
+{txt}             LOMBOK TENGAH {c |}{res}         29        0.16       71.76
+{txt}              LOMBOK TIMUR {c |}{res}         24        0.13       71.90
+{txt}                   SUMBAWA {c |}{res}         33        0.18       72.08
+{txt}                     DOMPU {c |}{res}         19        0.11       72.18
+{txt}                      BIMA {c |}{res}          6        0.03       72.22
+{txt}             SUMBAWA BARAT {c |}{res}          2        0.01       72.23
+{txt}              LOMBOK UTARA {c |}{res}          2        0.01       72.24
+{txt}              KOTA MATARAM {c |}{res}        227        1.26       73.50
+{txt}                 KOTA BIMA {c |}{res}         31        0.17       73.67
+{txt}               SUMBA BARAT {c |}{res}         23        0.13       73.80
+{txt}               SUMBA TIMUR {c |}{res}         31        0.17       73.97
+{txt}                    KUPANG {c |}{res}          3        0.02       73.99
+{txt}      TIMOR TENGAH SELATAN {c |}{res}          2        0.01       74.00
+{txt}        TIMOR TENGAH UTARA {c |}{res}         14        0.08       74.07
+{txt}                      BELU {c |}{res}         15        0.08       74.16
+{txt}                      ALOR {c |}{res}         35        0.19       74.35
+{txt}                   LEMBATA {c |}{res}         13        0.07       74.42
+{txt}              FLORES TIMUR {c |}{res}          4        0.02       74.45
+{txt}                     SIKKA {c |}{res}          5        0.03       74.47
+{txt}                      ENDE {c |}{res}         21        0.12       74.59
+{txt}                     NGADA {c |}{res}          8        0.04       74.63
+{txt}                 MANGGARAI {c |}{res}         13        0.07       74.71
+{txt}                 ROTE NDAO {c |}{res}          3        0.02       74.72
+{txt}           MANGGARAI BARAT {c |}{res}         24        0.13       74.86
+{txt}              SUMBA TENGAH {c |}{res}          5        0.03       74.88
+{txt}          SUMBA BARAT DAYA {c |}{res}         13        0.07       74.96
+{txt}                   NAGEKEO {c |}{res}          2        0.01       74.97
+{txt}                    MALAKA {c |}{res}          8        0.04       75.01
+{txt}               KOTA KUPANG {c |}{res}        106        0.59       75.60
+{txt}                    SAMBAS {c |}{res}         19        0.11       75.70
+{txt}                BENGKAYANG {c |}{res}         22        0.12       75.83
+{txt}                    LANDAK {c |}{res}          5        0.03       75.85
+{txt}                  MEMPAWAH {c |}{res}         10        0.06       75.91
+{txt}                   SANGGAU {c |}{res}          4        0.02       75.93
+{txt}                  KETAPANG {c |}{res}         21        0.12       76.05
+{txt}                   SINTANG {c |}{res}         15        0.08       76.13
+{txt}               KAPUAS HULU {c |}{res}          7        0.04       76.17
+{txt}                   SEKADAU {c |}{res}          5        0.03       76.20
+{txt}                    MELAWI {c |}{res}          3        0.02       76.21
+{txt}              KAYONG UTARA {c |}{res}          3        0.02       76.23
+{txt}                 KUBU RAYA {c |}{res}         21        0.12       76.35
+{txt}            KOTA PONTIANAK {c |}{res}         71        0.39       76.74
+{txt}           KOTA SINGKAWANG {c |}{res}         52        0.29       77.03
+{txt}        KOTAWARINGIN BARAT {c |}{res}         22        0.12       77.15
+{txt}        KOTAWARINGIN TIMUR {c |}{res}         28        0.16       77.31
+{txt}                    KAPUAS {c |}{res}         21        0.12       77.42
+{txt}            BARITO SELATAN {c |}{res}          4        0.02       77.44
+{txt}              BARITO UTARA {c |}{res}          9        0.05       77.49
+{txt}                  SUKAMARA {c |}{res}          3        0.02       77.51
+{txt}                  LAMANDAU {c |}{res}          4        0.02       77.53
+{txt}                   SERUYAN {c |}{res}          7        0.04       77.57
+{txt}                  KATINGAN {c |}{res}          2        0.01       77.58
+{txt}              PULANG PISAU {c |}{res}          1        0.01       77.59
+{txt}                GUNUNG MAS {c |}{res}          5        0.03       77.62
+{txt}              BARITO TIMUR {c |}{res}         18        0.10       77.72
+{txt}               MURUNG RAYA {c |}{res}         12        0.07       77.78
+{txt}        KOTA PALANGKA RAYA {c |}{res}         64        0.35       78.14
+{txt}                TANAH LAUT {c |}{res}         34        0.19       78.33
+{txt}                 KOTA BARU {c |}{res}         14        0.08       78.40
+{txt}                    BANJAR {c |}{res}         40        0.22       78.62
+{txt}                     TAPIN {c |}{res}         11        0.06       78.69
+{txt}       HULU SUNGAI SELATAN {c |}{res}         16        0.09       78.77
+{txt}        HULU SUNGAI TENGAH {c |}{res}         33        0.18       78.96
+{txt}         HULU SUNGAI UTARA {c |}{res}         19        0.11       79.06
+{txt}                  TABALONG {c |}{res}         29        0.16       79.22
+{txt}               TANAH BUMBU {c |}{res}         42        0.23       79.46
+{txt}                  BALANGAN {c |}{res}         21        0.12       79.57
+{txt}          KOTA BANJARMASIN {c |}{res}        115        0.64       80.21
+{txt}          KOTA BANJAR BARU {c |}{res}         28        0.16       80.36
+{txt}                     PASER {c |}{res}         52        0.29       80.65
+{txt}               KUTAI BARAT {c |}{res}         17        0.09       80.75
+{txt}         KUTAI KARTANEGARA {c |}{res}         41        0.23       80.97
+{txt}               KUTAI TIMUR {c |}{res}         23        0.13       81.10
+{txt}                     BERAU {c |}{res}         23        0.13       81.23
+{txt}       PENAJAM PASER UTARA {c |}{res}         11        0.06       81.29
+{txt}           KOTA BALIKPAPAN {c |}{res}        167        0.93       82.22
+{txt}            KOTA SAMARINDA {c |}{res}        174        0.96       83.18
+{txt}              KOTA BONTANG {c |}{res}         33        0.18       83.36
+{txt}                   MALINAU {c |}{res}          8        0.04       83.41
+{txt}                  BULUNGAN {c |}{res}         20        0.11       83.52
+{txt}                   NUNUKAN {c |}{res}         20        0.11       83.63
+{txt}              KOTA TARAKAN {c |}{res}         32        0.18       83.81
+{txt}         BOLAANG MONGONDOW {c |}{res}          6        0.03       83.84
+{txt}                  MINAHASA {c |}{res}         48        0.27       84.11
+{txt}         KEPULAUAN SANGIHE {c |}{res}         27        0.15       84.26
+{txt}          KEPULAUAN TALAUD {c |}{res}         16        0.09       84.34
+{txt}          MINAHASA SELATAN {c |}{res}         14        0.08       84.42
+{txt}            MINAHASA UTARA {c |}{res}         65        0.36       84.78
+{txt}   BOLAANG MONGONDOW UTARA {c |}{res}         13        0.07       84.85
+{txt}     SIAU TAGULANDANG BIAR {c |}{res}          4        0.02       84.88
+{txt}         MINAHASA TENGGARA {c |}{res}          5        0.03       84.90
+{txt} BOLAANG MONGONDOW SELATAN {c |}{res}          7        0.04       84.94
+{txt}               KOTA MANADO {c |}{res}        164        0.91       85.85
+{txt}               KOTA BITUNG {c |}{res}         40        0.22       86.07
+{txt}              KOTA TOMOHON {c |}{res}         72        0.40       86.47
+{txt}           KOTA KOTAMOBAGU {c |}{res}         20        0.11       86.58
+{txt}         BANGGAI KEPULAUAN {c |}{res}          8        0.04       86.63
+{txt}                   BANGGAI {c |}{res}         11        0.06       86.69
+{txt}                  MOROWALI {c |}{res}         19        0.11       86.79
+{txt}                      POSO {c |}{res}         55        0.30       87.10
+{txt}                 TOLI-TOLI {c |}{res}         46        0.25       87.35
+{txt}                      BUOL {c |}{res}         28        0.16       87.51
+{txt}            PARIGI MOUTONG {c |}{res}         21        0.12       87.62
+{txt}              TOJO UNA-UNA {c |}{res}          8        0.04       87.67
+{txt}                      SIGI {c |}{res}          2        0.01       87.68
+{txt}              BANGGAI LAUT {c |}{res}          8        0.04       87.72
+{txt}            MOROWALI UTARA {c |}{res}         11        0.06       87.79
+{txt}                 KOTA PALU {c |}{res}         96        0.53       88.32
+{txt}         KEPULAUAN SELAYAR {c |}{res}         10        0.06       88.37
+{txt}                 BULUKUMBA {c |}{res}         13        0.07       88.44
+{txt}                  BANTAENG {c |}{res}         27        0.15       88.59
+{txt}                 JENEPONTO {c |}{res}         10        0.06       88.65
+{txt}                   TAKALAR {c |}{res}         17        0.09       88.74
+{txt}                      GOWA {c |}{res}         16        0.09       88.83
+{txt}                    SINJAI {c |}{res}          8        0.04       88.88
+{txt}                     MAROS {c |}{res}         32        0.18       89.05
+{txt}      PANGKAJENE KEPULAUAN {c |}{res}         11        0.06       89.12
+{txt}                     BARRU {c |}{res}          8        0.04       89.16
+{txt}                      BONE {c |}{res}         26        0.14       89.30
+{txt}                   SOPPENG {c |}{res}          6        0.03       89.34
+{txt}                      WAJO {c |}{res}         12        0.07       89.40
+{txt}         SIDENRENG RAPPANG {c |}{res}         13        0.07       89.48
+{txt}                   PINRANG {c |}{res}         19        0.11       89.58
+{txt}                  ENREKANG {c |}{res}          2        0.01       89.59
+{txt}                      LUWU {c |}{res}         28        0.16       89.75
+{txt}               TANA TORAJA {c |}{res}         16        0.09       89.84
+{txt}                LUWU UTARA {c |}{res}         26        0.14       89.98
+{txt}                LUWU TIMUR {c |}{res}         53        0.29       90.27
+{txt}              TORAJA UTARA {c |}{res}         15        0.08       90.36
+{txt}             KOTA MAKASSAR {c |}{res}        269        1.49       91.85
+{txt}             KOTA PAREPARE {c |}{res}         33        0.18       92.03
+{txt}               KOTA PALOPO {c |}{res}         86        0.48       92.51
+{txt}                     BUTON {c |}{res}          6        0.03       92.54
+{txt}                      MUNA {c |}{res}         14        0.08       92.62
+{txt}                    KONAWE {c |}{res}         44        0.24       92.86
+{txt}                    Kolaka {c |}{res}         11        0.06       92.92
+{txt}            KONAWE SELATAN {c |}{res}          5        0.03       92.95
+{txt}                   BOMBANA {c |}{res}         26        0.14       93.09
+{txt}                  WAKATOBI {c |}{res}          3        0.02       93.11
+{txt}              KOLAKA UTARA {c |}{res}         11        0.06       93.17
+{txt}               BUTON UTARA {c |}{res}          3        0.02       93.19
+{txt}              KONAWE UTARA {c |}{res}         10        0.06       93.24
+{txt}              KOLAKA TIMUR {c |}{res}          3        0.02       93.26
+{txt}                MUNA BARAT {c |}{res}         22        0.12       93.38
+{txt}              KOTA KENDARI {c |}{res}         64        0.35       93.74
+{txt}               KOTA BAUBAU {c |}{res}         33        0.18       93.92
+{txt}                   BOALEMO {c |}{res}          6        0.03       93.95
+{txt}                 GORONTALO {c |}{res}         33        0.18       94.14
+{txt}                  POHUWATO {c |}{res}         30        0.17       94.30
+{txt}              BONE BOLANGO {c |}{res}         20        0.11       94.41
+{txt}           GORONTALO UTARA {c |}{res}          2        0.01       94.42
+{txt}            KOTA GORONTALO {c |}{res}         53        0.29       94.72
+{txt}                    MAJENE {c |}{res}          6        0.03       94.75
+{txt}           POLEWALI MANDAR {c |}{res}         14        0.08       94.83
+{txt}                    MAMASA {c |}{res}          3        0.02       94.85
+{txt}                    MAMUJU {c |}{res}         15        0.08       94.93
+{txt}              MAMUJU UTARA {c |}{res}          8        0.04       94.97
+{txt}             MAMUJU TENGAH {c |}{res}          8        0.04       95.02
+{txt}     MALUKU TENGGARA BARAT {c |}{res}          6        0.03       95.05
+{txt}           MALUKU TENGGARA {c |}{res}         25        0.14       95.19
+{txt}             MALUKU TENGAH {c |}{res}         13        0.07       95.26
+{txt}                      BURU {c |}{res}         14        0.08       95.34
+{txt}             KEPULAUAN ARU {c |}{res}         40        0.22       95.56
+{txt}        SERAM BAGIAN BARAT {c |}{res}          2        0.01       95.57
+{txt}        SERAM BAGIAN TIMUR {c |}{res}          4        0.02       95.59
+{txt}              BURU SELATAN {c |}{res}          7        0.04       95.63
+{txt}                KOTA AMBON {c |}{res}        149        0.83       96.46
+{txt}                 KOTA TUAL {c |}{res}          2        0.01       96.47
+{txt}           HALMAHERA BARAT {c |}{res}         13        0.07       96.54
+{txt}          HALMAHERA TENGAH {c |}{res}          4        0.02       96.56
+{txt}            KEPULAUAN SULA {c |}{res}          4        0.02       96.59
+{txt}         HALMAHERA SELATAN {c |}{res}         26        0.14       96.73
+{txt}           HALMAHERA UTARA {c |}{res}         19        0.11       96.84
+{txt}           HALMAHERA TIMUR {c |}{res}          2        0.01       96.85
+{txt}             PULAU MOROTAI {c |}{res}          6        0.03       96.88
+{txt}              KOTA TERNATE {c |}{res}         73        0.40       97.28
+{txt}     KOTA TIDORE KEPULAUAN {c |}{res}          9        0.05       97.33
+{txt}                    FAKFAK {c |}{res}         10        0.06       97.39
+{txt}                   KAIMANA {c |}{res}          9        0.05       97.44
+{txt}             TELUK WONDAMA {c |}{res}          6        0.03       97.47
+{txt}                 MANOKWARI {c |}{res}         16        0.09       97.56
+{txt}            SORONG SELATAN {c |}{res}         12        0.07       97.63
+{txt}                    SORONG {c |}{res}         17        0.09       97.72
+{txt}                RAJA AMPAT {c |}{res}         15        0.08       97.81
+{txt}               KOTA SORONG {c |}{res}         40        0.22       98.03
+{txt}                   MERAUKE {c |}{res}         25        0.14       98.17
+{txt}                JAYAWIJAYA {c |}{res}         21        0.12       98.28
+{txt}                  JAYAPURA {c |}{res}         33        0.18       98.46
+{txt}                    NABIRE {c |}{res}         41        0.23       98.69
+{txt}           KEPULAUAN YAPEN {c |}{res}         31        0.17       98.86
+{txt}               BIAK NUMFOR {c |}{res}         34        0.19       99.05
+{txt}                    PANIAI {c |}{res}         10        0.06       99.11
+{txt}               PUNCAK JAYA {c |}{res}          5        0.03       99.14
+{txt}                    MIMIKA {c |}{res}         37        0.21       99.34
+{txt}              BOVEN DIGOEL {c |}{res}         14        0.08       99.42
+{txt}                     MAPPI {c |}{res}         14        0.08       99.50
+{txt}                     ASMAT {c |}{res}          4        0.02       99.52
+{txt}                  YAHUKIMO {c |}{res}          4        0.02       99.54
+{txt}                    KEEROM {c |}{res}         12        0.07       99.61
+{txt}                   SUPIORI {c |}{res}          8        0.04       99.65
+{txt}             KOTA JAYAPURA {c |}{res}         63        0.35      100.00
+{txt}{hline 27}{c +}{hline 35}
+                     Total {c |}{res}     18,044      100.00
+{txt}
+{com}. 
+. sort FKL05
+{txt}
+{com}. 
+. /*
+> 1171    "KOTA BANDA ACEH"
+> 
+> 1275    "KOTA MEDAN"
+> 
+> 1671    "KOTA PALEMBANG"
+> 1471    "KOTA PEKANBARU" 1473   "KOTA DUMAI"
+> 2171    "KOTA BATAM" 2172       "KOTA TANJUNG PINANG"
+> 
+> 3171    "KOTA JAKARTA SELATAN" 3172     "KOTA JAKARTA TIMUR" 3173       "KOTA JAKARTA PUSAT" 3174       "KOTA JAKARTA BARAT" 3175       "KOTA JAKARTA UTARA"
+> 
+> 3271 "KOTA BOGOR" 3273  "KOTA BANDUNG" 3275     "KOTA BEKASI" 3276      "KOTA DEPOK"
+> 
+> 3374    "KOTA SEMARANG"
+> 
+> 3404    "SLEMAN"
+> 
+> 3573    "KOTA MALANG" 3578      "KOTA SURABAYA"
+> 
+> 3604    "SERANG"
+> 
+> 3674    "KOTA TANGERANG SELATAN"
+> 3671    "KOTA TANGERANG"
+> 
+> 5103    "BADUNG" 5104   "GIANYAR" 5171  "KOTA DENPASAR" 5108    "BULELENG"
+> 
+> 5271    "KOTA MATARAM"
+> 5371    "KOTA KUPANG"
+> 6171    "KOTA PONTIANAK"
+> 6372    "KOTA BANJAR BARU"
+> 6471    "KOTA BALIKPAPAN" 6472  "KOTA SAMARINDA"
+> 7371 "KOTA MAKASSAR"
+> 
+> 7471    "KOTA KENDARI"
+> 8171    "KOTA AMBON"
+> 8271    "KOTA TERNATE"
+> 9171    "KOTA SORONG"
+> 9105    "MANOKWARI"
+> 9471    "KOTA JAYAPURA"
+> */
+. /*
+> 3471    "KOTA YOGYAKARTA"
+> 3673    "KOTA SERANG"
+> 6371    "KOTA BANJARMASIN"
+> 9107    "SORONG"
+> */
+. 
+. /*
+> 1171 "KOTA BANDA ACEH" 1275 "KOTA MEDAN" 1471 "KOTA PEKANBARU" 1473 "KOTA DUMAI"  1671 "KOTA PALEMBANG" 2171    "KOTA BATAM" 2172       "KOTA TANJUNG PINANG" 3171      "KOTA JAKARTA SELATAN" 3172     "KOTA JAKARTA TIMUR" 3173       "KOTA JAKARTA PUSAT" 3174       "KOTA JAKARTA BARAT" 3175       "KOTA JAKARTA UTARA" 3271 "KOTA BOGOR" 3273 "KOTA BANDUNG" 3275 "KOTA BEKASI" 3276 "KOTA DEPOK" 3374 "KOTA SEMARANG" 3404 "SLEMAN" 3573 "KOTA MALANG" 3578 "KOTA SURABAYA" 3604 "SERANG" 3671 "KOTA TANGERANG" 3674 "KOTA TANGERANG SELATAN" 5103 "BADUNG" 5104 "GIANYAR" 5108 "BULELENG" 5171 "KOTA DENPASAR" 5271 "KOTA MATARAM" 5371 "KOTA KUPANG" 6171 "KOTA PONTIANAK" 6372 "KOTA BANJAR BARU" 6471 "KOTA BALIKPAPAN" 6472 "KOTA SAMARINDA" 7371 "KOTA MAKASSAR" 7471 "KOTA KENDARI" 8171 "KOTA AMBON" 8271 "KOTA TERNATE" 9105 "MANOKWARI" 9171 "KOTA SORONG" 9471 "KOTA JAYAPURA"
+> */
+. /*
+> 3471    "KOTA YOGYAKARTA" 3673 "KOTA SERANG" 6371 "KOTA BANJARMASIN" 9107 "SORONG"
+> */
+. keep if FKL06 ==  1171 | FKL06 == 1275 | FKL06 == 1471 | FKL06 == 1473 | FKL06 == 1671 | FKL06 == 2171 | FKL06 == 2172 | FKL06 == 3171  | FKL06 == 3172 | FKL06 == 3173 | FKL06 == 3174 | FKL06 == 3175 | FKL06 == 3271 | FKL06 == 3273 | FKL06 == 3275 | FKL06 == 3276 | FKL06 == 3374 | FKL06 == 3404 | FKL06 == 3573 | FKL06 == 3578 | FKL06 == 3604 | FKL06 == 3671 | FKL06 == 3674 | FKL06 == 5103 | FKL06 == 5104 | FKL06 == 5108 | FKL06 == 5171 | FKL06 == 5271 | FKL06 == 5371 | FKL06 == 6171 | FKL06 == 6372 | FKL06 == 6471 | FKL06 == 6472 | FKL06 == 7371 | FKL06 == 7471 | FKL06 == 8171 | FKL06 == 8271 | FKL06 == 9105 | FKL06 == 9171 | FKL06 == 9471 | FKL06 == 3471 | FKL06 == 3673 | FKL06 == 6371 | FKL06 == 9107 
+{txt}(12,588 observations deleted)
+
+{com}. 
+. ta FKL06
+
+      {txt}Kabupaten/Kota FKRTL {c |}      Freq.     Percent        Cum.
+{hline 27}{c +}{hline 35}
+           KOTA BANDA ACEH {c |}{res}         88        1.61        1.61
+{txt}                KOTA MEDAN {c |}{res}        280        5.13        6.74
+{txt}            KOTA PEKANBARU {c |}{res}        245        4.49       11.24
+{txt}                KOTA DUMAI {c |}{res}         20        0.37       11.60
+{txt}            KOTA PALEMBANG {c |}{res}        253        4.64       16.24
+{txt}                KOTA BATAM {c |}{res}        174        3.19       19.43
+{txt}       KOTA TANJUNG PINANG {c |}{res}         26        0.48       19.90
+{txt}      KOTA JAKARTA SELATAN {c |}{res}        101        1.85       21.76
+{txt}        KOTA JAKARTA TIMUR {c |}{res}        239        4.38       26.14
+{txt}        KOTA JAKARTA PUSAT {c |}{res}         68        1.25       27.38
+{txt}        KOTA JAKARTA BARAT {c |}{res}         72        1.32       28.70
+{txt}        KOTA JAKARTA UTARA {c |}{res}        108        1.98       30.68
+{txt}                KOTA BOGOR {c |}{res}         72        1.32       32.00
+{txt}              KOTA BANDUNG {c |}{res}        292        5.35       37.35
+{txt}               KOTA BEKASI {c |}{res}         97        1.78       39.13
+{txt}                KOTA DEPOK {c |}{res}        114        2.09       41.22
+{txt}             KOTA SEMARANG {c |}{res}        194        3.56       44.78
+{txt}                    SLEMAN {c |}{res}         68        1.25       46.02
+{txt}           KOTA YOGYAKARTA {c |}{res}         40        0.73       46.76
+{txt}               KOTA MALANG {c |}{res}        128        2.35       49.10
+{txt}             KOTA SURABAYA {c |}{res}        220        4.03       53.13
+{txt}                    SERANG {c |}{res}         51        0.93       54.07
+{txt}            KOTA TANGERANG {c |}{res}        180        3.30       57.37
+{txt}               KOTA SERANG {c |}{res}        117        2.14       59.51
+{txt}    KOTA TANGERANG SELATAN {c |}{res}         58        1.06       60.58
+{txt}                    BADUNG {c |}{res}         88        1.61       62.19
+{txt}                   GIANYAR {c |}{res}        240        4.40       66.59
+{txt}                  BULELENG {c |}{res}         58        1.06       67.65
+{txt}             KOTA DENPASAR {c |}{res}        186        3.41       71.06
+{txt}              KOTA MATARAM {c |}{res}        227        4.16       75.22
+{txt}               KOTA KUPANG {c |}{res}        106        1.94       77.16
+{txt}            KOTA PONTIANAK {c |}{res}         71        1.30       78.46
+{txt}          KOTA BANJARMASIN {c |}{res}        115        2.11       80.57
+{txt}          KOTA BANJAR BARU {c |}{res}         28        0.51       81.09
+{txt}           KOTA BALIKPAPAN {c |}{res}        167        3.06       84.15
+{txt}            KOTA SAMARINDA {c |}{res}        174        3.19       87.34
+{txt}             KOTA MAKASSAR {c |}{res}        269        4.93       92.27
+{txt}              KOTA KENDARI {c |}{res}         64        1.17       93.44
+{txt}                KOTA AMBON {c |}{res}        149        2.73       96.17
+{txt}              KOTA TERNATE {c |}{res}         73        1.34       97.51
+{txt}                 MANOKWARI {c |}{res}         16        0.29       97.80
+{txt}                    SORONG {c |}{res}         17        0.31       98.11
+{txt}               KOTA SORONG {c |}{res}         40        0.73       98.85
+{txt}             KOTA JAYAPURA {c |}{res}         63        1.15      100.00
+{txt}{hline 27}{c +}{hline 35}
+                     Total {c |}{res}      5,456      100.00
+{txt}
+{com}. su FKL06
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 7}FKL06 {c |}{res}      5,456    4217.702    2065.268       1171       9471
+{txt}
+{com}. codebook FKL06
+
+{txt}{hline}
+{res}FKL06{right:Kabupaten/Kota FKRTL}
+{txt}{hline}
+
+{col 19}Type: Numeric ({res}int{txt})
+{ralign 22:Label}: {res:FKL06}
+
+{col 18}Range: [{res}1171{txt},{res}9471{txt}]{col 55}Units: {res}1
+{col 10}{txt}Unique values: {res}44{col 51}{txt}Missing .: {res}0{txt}/{res}5,456
+
+{txt}{ralign 23: Examples:}{col 25}{res}3171{col 31}{txt}KOTA JAKARTA SELATAN
+{ralign 23: }{col 25}{res}3276{col 31}{txt}KOTA DEPOK
+{ralign 23: }{col 25}{res}3674{col 31}{txt}KOTA TANGERANG SELATAN
+{ralign 23: }{col 25}{res}6371{col 31}{txt}KOTA BANJARMASIN
+
+{com}. 
+. save "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory diag-primeronly 40citiesdist.dta", replace
+{txt}{p 0 4 2}
+file {bf}
+D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory diag-primeronly 40citiesdist.dta{rm}
+saved
+{p_end}
+
+{com}. 
+. keep if FKL06 ==  1171 | FKL06 == 1275 | FKL06 == 1471 | FKL06 == 1473 | FKL06 == 1671 | FKL06 == 2171 | FKL06 == 2172 | FKL06 == 3171  | FKL06 == 3172 | FKL06 == 3173 | FKL06 == 3174 | FKL06 == 3175 | FKL06 == 3271 | FKL06 == 3273 | FKL06 == 3275 | FKL06 == 3276 | FKL06 == 3374 | FKL06 == 3404 | FKL06 == 3573 | FKL06 == 3578 | FKL06 == 3604 | FKL06 == 3671 | FKL06 == 3674 | FKL06 == 5103 | FKL06 == 5104 | FKL06 == 5108 | FKL06 == 5171 | FKL06 == 5271 | FKL06 == 5371 | FKL06 == 6171 | FKL06 == 6372 | FKL06 == 6471 | FKL06 == 6472 | FKL06 == 7371 | FKL06 == 7471 | FKL06 == 8171 | FKL06 == 8271 | FKL06 == 9105 | FKL06 == 9171 | FKL06 == 9471
+{txt}(289 observations deleted)
+
+{com}. 
+. ta FKL06
+
+      {txt}Kabupaten/Kota FKRTL {c |}      Freq.     Percent        Cum.
+{hline 27}{c +}{hline 35}
+           KOTA BANDA ACEH {c |}{res}         88        1.70        1.70
+{txt}                KOTA MEDAN {c |}{res}        280        5.42        7.12
+{txt}            KOTA PEKANBARU {c |}{res}        245        4.74       11.86
+{txt}                KOTA DUMAI {c |}{res}         20        0.39       12.25
+{txt}            KOTA PALEMBANG {c |}{res}        253        4.90       17.15
+{txt}                KOTA BATAM {c |}{res}        174        3.37       20.51
+{txt}       KOTA TANJUNG PINANG {c |}{res}         26        0.50       21.02
+{txt}      KOTA JAKARTA SELATAN {c |}{res}        101        1.95       22.97
+{txt}        KOTA JAKARTA TIMUR {c |}{res}        239        4.63       27.60
+{txt}        KOTA JAKARTA PUSAT {c |}{res}         68        1.32       28.91
+{txt}        KOTA JAKARTA BARAT {c |}{res}         72        1.39       30.31
+{txt}        KOTA JAKARTA UTARA {c |}{res}        108        2.09       32.40
+{txt}                KOTA BOGOR {c |}{res}         72        1.39       33.79
+{txt}              KOTA BANDUNG {c |}{res}        292        5.65       39.44
+{txt}               KOTA BEKASI {c |}{res}         97        1.88       41.32
+{txt}                KOTA DEPOK {c |}{res}        114        2.21       43.53
+{txt}             KOTA SEMARANG {c |}{res}        194        3.75       47.28
+{txt}                    SLEMAN {c |}{res}         68        1.32       48.60
+{txt}               KOTA MALANG {c |}{res}        128        2.48       51.07
+{txt}             KOTA SURABAYA {c |}{res}        220        4.26       55.33
+{txt}                    SERANG {c |}{res}         51        0.99       56.32
+{txt}            KOTA TANGERANG {c |}{res}        180        3.48       59.80
+{txt}    KOTA TANGERANG SELATAN {c |}{res}         58        1.12       60.93
+{txt}                    BADUNG {c |}{res}         88        1.70       62.63
+{txt}                   GIANYAR {c |}{res}        240        4.64       67.27
+{txt}                  BULELENG {c |}{res}         58        1.12       68.40
+{txt}             KOTA DENPASAR {c |}{res}        186        3.60       72.00
+{txt}              KOTA MATARAM {c |}{res}        227        4.39       76.39
+{txt}               KOTA KUPANG {c |}{res}        106        2.05       78.44
+{txt}            KOTA PONTIANAK {c |}{res}         71        1.37       79.81
+{txt}          KOTA BANJAR BARU {c |}{res}         28        0.54       80.36
+{txt}           KOTA BALIKPAPAN {c |}{res}        167        3.23       83.59
+{txt}            KOTA SAMARINDA {c |}{res}        174        3.37       86.96
+{txt}             KOTA MAKASSAR {c |}{res}        269        5.21       92.16
+{txt}              KOTA KENDARI {c |}{res}         64        1.24       93.40
+{txt}                KOTA AMBON {c |}{res}        149        2.88       96.28
+{txt}              KOTA TERNATE {c |}{res}         73        1.41       97.70
+{txt}                 MANOKWARI {c |}{res}         16        0.31       98.01
+{txt}               KOTA SORONG {c |}{res}         40        0.77       98.78
+{txt}             KOTA JAYAPURA {c |}{res}         63        1.22      100.00
+{txt}{hline 27}{c +}{hline 35}
+                     Total {c |}{res}      5,167      100.00
+{txt}
+{com}. su FKL06
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 7}FKL06 {c |}{res}      5,167    4171.805    2075.793       1171       9471
+{txt}
+{com}. codebook FKL06
+
+{txt}{hline}
+{res}FKL06{right:Kabupaten/Kota FKRTL}
+{txt}{hline}
+
+{col 19}Type: Numeric ({res}int{txt})
+{ralign 22:Label}: {res:FKL06}
+
+{col 18}Range: [{res}1171{txt},{res}9471{txt}]{col 55}Units: {res}1
+{col 10}{txt}Unique values: {res}40{col 51}{txt}Missing .: {res}0{txt}/{res}5,167
+
+{txt}{ralign 23: Examples:}{col 25}{res}2171{col 31}{txt}KOTA BATAM
+{ralign 23: }{col 25}{res}3275{col 31}{txt}KOTA BEKASI
+{ralign 23: }{col 25}{res}3674{col 31}{txt}KOTA TANGERANG SELATAN
+{ralign 23: }{col 25}{res}6372{col 31}{txt}KOTA BANJAR BARU
+
+{com}. 
+. save "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory diag-primeronly 36citiesdist.dta", replace
+{txt}{p 0 4 2}
+file {bf}
+D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory diag-primeronly 36citiesdist.dta{rm}
+saved
+{p_end}
+
+{com}. 
+. export excel using "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory diag-primeronly 36citiesdist.xlsx", sheet("biayaklaim_kabkota") firstrow(variables) replace
+{res}{txt}file {bf:D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory diag-primeronly 36citiesdist.xlsx} saved
+
+{com}. 
+. sort FKL04
+{txt}
+{com}. sort FKL03
+{txt}
+{com}. 
+. **klaim biayaverfikasi atau tagih rs * bobot
+. 
+. use "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory diag-primeronly 36citiesdist.dta", clear
+{txt}(BPJS Kesehatan 2021 FKRTL - created:  9 Dec 2022 09:33:49)
+
+{com}. 
+. gen FKL47PSTV15 = FKL47*PSTV15  
+{txt}
+{com}. gen FKL48PSTV15 = FKL48*PSTV15 
+{txt}
+{com}. 
+. la var FKL47PSTV15 "Biaya Tagih - oleh fasilitas kesehatan (provider) dikali bobot"
+{txt}
+{com}. la var FKL48PSTV15 "Biaya Verifikasi - BPJS Kesehatan setelah dilakukan verifikasi dikali bobot"
+{txt}
+{com}. desc
+
+{txt}Contains data from {res}D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory diag-primeronly 36citiesdist.dta
+{txt} Observations:{res}         5,167                  BPJS Kesehatan 2021 FKRTL - created:  9 Dec 2022
+                                                09:33:49
+{txt}    Variables:{res}            57                  8 Dec 2023 09:26
+{txt}{hline}
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+{hline}
+{p 0 48}{res}{bind:PSTV01         }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Nomor peserta{p_end}
+{p 0 48}{bind:PSTV02         }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Nomor keluarga{p_end}
+{p 0 48}{bind:PSTV15         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Bobot{p_end}
+{p 0 48}{bind:FKP02          }{txt}{bind: str16   }{bind:{txt}%16s      }{space 1}{bind:         }{bind:  }{res}{res}No Asal Rujukan (ID Kunjungan FKTP){p_end}
+{p 0 48}{bind:FKL02          }{txt}{bind: str16   }{bind:{txt}%16s      }{space 1}{bind:         }{bind:  }{res}{res}ID Kunjungan{p_end}
+{p 0 48}{bind:FKL03          }{txt}{bind: int     }{bind:{txt}%td       }{space 1}{bind:         }{bind:  }{res}{res}Tanggal datang kunjungan FKRTL{p_end}
+{p 0 48}{bind:FKL04          }{txt}{bind: int     }{bind:{txt}%td       }{space 1}{bind:         }{bind:  }{res}{res}Tanggal pulang kunjungan FKRTL{p_end}
+{p 0 48}{bind:FKL05          }{txt}{bind: byte    }{bind:{txt}%26.0g    }{space 1}{bind:FKL05    }{bind:  }{res}{res}Provinsi FKRTL{p_end}
+{p 0 48}{bind:FKL06          }{txt}{bind: int     }{bind:{txt}%26.0g    }{space 1}{bind:FKL06    }{bind:  }{res}{res}Kabupaten/Kota FKRTL{p_end}
+{p 0 48}{bind:FKL07          }{txt}{bind: byte    }{bind:{txt}%19.0g    }{space 1}{bind:FKL07    }{bind:  }{res}{res}Kepemilikan FKRTL{p_end}
+{p 0 48}{bind:FKL08          }{txt}{bind: byte    }{bind:{txt}%14.0g    }{space 1}{bind:FKL08    }{bind:  }{res}{res}Jenis FKRTL{p_end}
+{p 0 48}{bind:FKL09          }{txt}{bind: byte    }{bind:{txt}%28.0g    }{space 1}{bind:FKL09    }{bind:  }{res}{res}Tipe FKRTL{p_end}
+{p 0 48}{bind:FKL10          }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:FKL10    }{bind:  }{res}{res}Tingkat Pelayanan FKRTL{p_end}
+{p 0 48}{bind:FKL11          }{txt}{bind: int     }{bind:{txt}%8.0g     }{space 1}{bind:FKL11    }{bind:  }{res}{res}Jenis Poli FKRTL{p_end}
+{p 0 48}{bind:FKL12          }{txt}{bind: byte    }{bind:{txt}%13.0g    }{space 1}{bind:FKL12    }{bind:  }{res}{res}Segmen Peserta saat akses layanan FKRTL{p_end}
+{p 0 48}{bind:FKL13          }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:FKL13    }{bind:  }{res}{res}Kelas rawat saat peserta mengakses pelayanan kesehatan di FKRTL{p_end}
+{p 0 48}{bind:FKL14          }{txt}{bind: byte    }{bind:{txt}%12.0g    }{space 1}{bind:FKL14    }{bind:  }{res}{res}Status pulang dari FKRTL{p_end}
+{p 0 48}{bind:FKL15          }{txt}{bind: int     }{bind:{txt}%189.0g   }{space 1}{bind:fkl15    }{bind:  }{res}{res}Kode dan nama diagnosis masuk ICD 10 (3 digit){p_end}
+{p 0 48}{bind:FKL15A         }{txt}{bind: str3    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode diagnosis masuk ICD 10 (3 digit){p_end}
+{p 0 48}{bind:FKL16          }{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode ICD 10 diagnosis masuk FKRTL (3-6digit){p_end}
+{p 0 48}{bind:FKL16A         }{txt}{bind: strL    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Nama diagnosis masuk FKRTL (3-6digit){p_end}
+{p 0 48}{bind:FKL17          }{txt}{bind: int     }{bind:{txt}%127.0g   }{space 1}{bind:fkl17    }{bind:  }{res}{res}Kode dan nama diagnosis primer ICD 10 (3 digit){p_end}
+{p 0 48}{bind:FKL17A         }{txt}{bind: str3    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode diagnosis primer ICD 10 (3 digit){p_end}
+{p 0 48}{bind:FKL18          }{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode ICD 10 diagnosis primer FKRTL (3-6digit){p_end}
+{p 0 48}{bind:FKL18A         }{txt}{bind: strL    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Nama diagnosis primer FKRTL (3-6digit){p_end}
+{p 0 48}{bind:FKL19          }{txt}{bind: str10   }{bind:{txt}%10s      }{space 1}{bind:         }{bind:  }{res}{res}Kode INACBGs{p_end}
+{p 0 48}{bind:FKL19A         }{txt}{bind: strL    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Deskripsi kode INACBGs{p_end}
+{p 0 48}{bind:FKL20          }{txt}{bind: byte    }{bind:{txt}%39.0g    }{space 1}{bind:FKL20    }{bind:  }{res}{res}INACBGs - Kode Casemix main groups (Digit ke-1){p_end}
+{p 0 48}{bind:FKL21          }{txt}{bind: byte    }{bind:{txt}%31.0g    }{space 1}{bind:FKL21    }{bind:  }{res}{res}INACBGs - Tipe kelompok kasus atau case groups (Digit ke-2){p_end}
+{p 0 48}{bind:FKL22          }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}INACBGs - Spesifikasi kelompok kasus (Digit ke-3){p_end}
+{p 0 48}{bind:FKL23          }{txt}{bind: byte    }{bind:{txt}%32.0g    }{space 1}{bind:FKL23    }{bind:  }{res}{res}INACBGs - Tingkat keparahan kelompok kasus(Digit ke-4){p_end}
+{p 0 48}{bind:FKL25          }{txt}{bind: byte    }{bind:{txt}%26.0g    }{space 1}{bind:FKL25    }{bind:  }{res}{res}Provinsi faskes perujuk{p_end}
+{p 0 48}{bind:FKL26          }{txt}{bind: int     }{bind:{txt}%26.0g    }{space 1}{bind:FKL26    }{bind:  }{res}{res}Kabupaten/Kota faskes perujuk{p_end}
+{p 0 48}{bind:FKL27          }{txt}{bind: byte    }{bind:{txt}%13.0g    }{space 1}{bind:FKL27    }{bind:  }{res}{res}Kepemilikan faskes perujuk{p_end}
+{p 0 48}{bind:FKL28          }{txt}{bind: byte    }{bind:{txt}%14.0g    }{space 1}{bind:FKL28    }{bind:  }{res}{res}Jenis faskes perujuk{p_end}
+{p 0 48}{bind:FKL29          }{txt}{bind: byte    }{bind:{txt}%25.0g    }{space 1}{bind:FKL29    }{bind:  }{res}{res}Tipe faskes perujuk{p_end}
+{p 0 48}{bind:FKL30          }{txt}{bind: strL    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Jenis prosedur{p_end}
+{p 0 48}{bind:FKL31          }{txt}{bind: byte    }{bind:{txt}%10.0g    }{space 1}{bind:FKL31    }{bind:  }{res}{res}Tarif regional INACBGs{p_end}
+{p 0 48}{bind:FKL32          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Group Tarif INACBGs{p_end}
+{p 0 48}{bind:FKL33          }{txt}{bind: str11   }{bind:{txt}%11s      }{space 1}{bind:         }{bind:  }{res}{res}Kode special sub-acute groups (SA){p_end}
+{p 0 48}{bind:FKL34          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Tarif special sub-acute groups (SA){p_end}
+{p 0 48}{bind:FKL35          }{txt}{bind: str9    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode special procedures (SP){p_end}
+{p 0 48}{bind:FKL36          }{txt}{bind: str49   }{bind:{txt}%49s      }{space 1}{bind:         }{bind:  }{res}{res}Deskripsi special procedures (SP){p_end}
+{p 0 48}{bind:FKL37          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Tarif special procedures (SP){p_end}
+{p 0 48}{bind:FKL38          }{txt}{bind: str9    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode special prosthesis (RR){p_end}
+{p 0 48}{bind:FKL39          }{txt}{bind: str27   }{bind:{txt}%27s      }{space 1}{bind:         }{bind:  }{res}{res}Deskripsi special prosthesis (RR){p_end}
+{p 0 48}{bind:FKL40          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Tarif special prosthesis (RR){p_end}
+{p 0 48}{bind:FKL41          }{txt}{bind: str9    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode special investigation(SI){p_end}
+{p 0 48}{bind:FKL42          }{txt}{bind: str39   }{bind:{txt}%39s      }{space 1}{bind:         }{bind:  }{res}{res}Deskripsi special investigation(SI){p_end}
+{p 0 48}{bind:FKL43          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Tarif special investigation(SI){p_end}
+{p 0 48}{bind:FKL44          }{txt}{bind: str8    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode special drugs (SD){p_end}
+{p 0 48}{bind:FKL45          }{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}Deskripsi special drugs (SD){p_end}
+{p 0 48}{bind:FKL46          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Tarif special drugs (SD){p_end}
+{p 0 48}{bind:FKL47          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Biaya Tagih - oleh fasilitas kesehatan (provider){p_end}
+{p 0 48}{bind:FKL48          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Biaya Verifikasi - BPJS Kesehatan setelah dilakukan verifikasi{p_end}
+{p 0 48}{bind:FKL47PSTV15    }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Biaya Tagih - oleh fasilitas kesehatan (provider) dikali bobot{p_end}
+{p 0 48}{bind:FKL48PSTV15    }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Biaya Verifikasi - BPJS Kesehatan setelah dilakukan verifikasi dikali bobot{p_end}
+{txt}{hline}
+Sorted by: {res}FKL05
+     Note: Dataset has changed since last saved.
+{txt}
+{com}. 
+. save "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory diag-primeronly biayabobot 36citiesdist.dta", replace
+{txt}{p 0 4 2}
+file {bf}
+D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory diag-primeronly biayabobot 36citiesdist.dta{rm}
+saved
+{p_end}
+
+{com}. 
+. export excel using "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory diag-primeronly 36citiesdist biayabobot.xlsx", sheet("biayaklaim_kabkota") firstrow(variables) replace
+{res}{txt}file {bf:D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory diag-primeronly 36citiesdist biayabobot.xlsx} saved
+
+{com}. 
+. 
+. use "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory diag-primeronly biayabobot 36citiesdist.dta", clear
+{txt}(BPJS Kesehatan 2021 FKRTL - created:  9 Dec 2022 09:33:49)
+
+{com}. 
+. desc
+
+{txt}Contains data from {res}D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory diag-primeronly biayabobot 36citiesdist.dta
+{txt} Observations:{res}         5,167                  BPJS Kesehatan 2021 FKRTL - created:  9 Dec 2022
+                                                09:33:49
+{txt}    Variables:{res}            57                  8 Dec 2023 09:27
+{txt}{hline}
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+{hline}
+{p 0 48}{res}{bind:PSTV01         }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Nomor peserta{p_end}
+{p 0 48}{bind:PSTV02         }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Nomor keluarga{p_end}
+{p 0 48}{bind:PSTV15         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Bobot{p_end}
+{p 0 48}{bind:FKP02          }{txt}{bind: str16   }{bind:{txt}%16s      }{space 1}{bind:         }{bind:  }{res}{res}No Asal Rujukan (ID Kunjungan FKTP){p_end}
+{p 0 48}{bind:FKL02          }{txt}{bind: str16   }{bind:{txt}%16s      }{space 1}{bind:         }{bind:  }{res}{res}ID Kunjungan{p_end}
+{p 0 48}{bind:FKL03          }{txt}{bind: int     }{bind:{txt}%td       }{space 1}{bind:         }{bind:  }{res}{res}Tanggal datang kunjungan FKRTL{p_end}
+{p 0 48}{bind:FKL04          }{txt}{bind: int     }{bind:{txt}%td       }{space 1}{bind:         }{bind:  }{res}{res}Tanggal pulang kunjungan FKRTL{p_end}
+{p 0 48}{bind:FKL05          }{txt}{bind: byte    }{bind:{txt}%26.0g    }{space 1}{bind:FKL05    }{bind:  }{res}{res}Provinsi FKRTL{p_end}
+{p 0 48}{bind:FKL06          }{txt}{bind: int     }{bind:{txt}%26.0g    }{space 1}{bind:FKL06    }{bind:  }{res}{res}Kabupaten/Kota FKRTL{p_end}
+{p 0 48}{bind:FKL07          }{txt}{bind: byte    }{bind:{txt}%19.0g    }{space 1}{bind:FKL07    }{bind:  }{res}{res}Kepemilikan FKRTL{p_end}
+{p 0 48}{bind:FKL08          }{txt}{bind: byte    }{bind:{txt}%14.0g    }{space 1}{bind:FKL08    }{bind:  }{res}{res}Jenis FKRTL{p_end}
+{p 0 48}{bind:FKL09          }{txt}{bind: byte    }{bind:{txt}%28.0g    }{space 1}{bind:FKL09    }{bind:  }{res}{res}Tipe FKRTL{p_end}
+{p 0 48}{bind:FKL10          }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:FKL10    }{bind:  }{res}{res}Tingkat Pelayanan FKRTL{p_end}
+{p 0 48}{bind:FKL11          }{txt}{bind: int     }{bind:{txt}%8.0g     }{space 1}{bind:FKL11    }{bind:  }{res}{res}Jenis Poli FKRTL{p_end}
+{p 0 48}{bind:FKL12          }{txt}{bind: byte    }{bind:{txt}%13.0g    }{space 1}{bind:FKL12    }{bind:  }{res}{res}Segmen Peserta saat akses layanan FKRTL{p_end}
+{p 0 48}{bind:FKL13          }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:FKL13    }{bind:  }{res}{res}Kelas rawat saat peserta mengakses pelayanan kesehatan di FKRTL{p_end}
+{p 0 48}{bind:FKL14          }{txt}{bind: byte    }{bind:{txt}%12.0g    }{space 1}{bind:FKL14    }{bind:  }{res}{res}Status pulang dari FKRTL{p_end}
+{p 0 48}{bind:FKL15          }{txt}{bind: int     }{bind:{txt}%189.0g   }{space 1}{bind:fkl15    }{bind:  }{res}{res}Kode dan nama diagnosis masuk ICD 10 (3 digit){p_end}
+{p 0 48}{bind:FKL15A         }{txt}{bind: str3    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode diagnosis masuk ICD 10 (3 digit){p_end}
+{p 0 48}{bind:FKL16          }{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode ICD 10 diagnosis masuk FKRTL (3-6digit){p_end}
+{p 0 48}{bind:FKL16A         }{txt}{bind: strL    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Nama diagnosis masuk FKRTL (3-6digit){p_end}
+{p 0 48}{bind:FKL17          }{txt}{bind: int     }{bind:{txt}%127.0g   }{space 1}{bind:fkl17    }{bind:  }{res}{res}Kode dan nama diagnosis primer ICD 10 (3 digit){p_end}
+{p 0 48}{bind:FKL17A         }{txt}{bind: str3    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode diagnosis primer ICD 10 (3 digit){p_end}
+{p 0 48}{bind:FKL18          }{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode ICD 10 diagnosis primer FKRTL (3-6digit){p_end}
+{p 0 48}{bind:FKL18A         }{txt}{bind: strL    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Nama diagnosis primer FKRTL (3-6digit){p_end}
+{p 0 48}{bind:FKL19          }{txt}{bind: str10   }{bind:{txt}%10s      }{space 1}{bind:         }{bind:  }{res}{res}Kode INACBGs{p_end}
+{p 0 48}{bind:FKL19A         }{txt}{bind: strL    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Deskripsi kode INACBGs{p_end}
+{p 0 48}{bind:FKL20          }{txt}{bind: byte    }{bind:{txt}%39.0g    }{space 1}{bind:FKL20    }{bind:  }{res}{res}INACBGs - Kode Casemix main groups (Digit ke-1){p_end}
+{p 0 48}{bind:FKL21          }{txt}{bind: byte    }{bind:{txt}%31.0g    }{space 1}{bind:FKL21    }{bind:  }{res}{res}INACBGs - Tipe kelompok kasus atau case groups (Digit ke-2){p_end}
+{p 0 48}{bind:FKL22          }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}INACBGs - Spesifikasi kelompok kasus (Digit ke-3){p_end}
+{p 0 48}{bind:FKL23          }{txt}{bind: byte    }{bind:{txt}%32.0g    }{space 1}{bind:FKL23    }{bind:  }{res}{res}INACBGs - Tingkat keparahan kelompok kasus(Digit ke-4){p_end}
+{p 0 48}{bind:FKL25          }{txt}{bind: byte    }{bind:{txt}%26.0g    }{space 1}{bind:FKL25    }{bind:  }{res}{res}Provinsi faskes perujuk{p_end}
+{p 0 48}{bind:FKL26          }{txt}{bind: int     }{bind:{txt}%26.0g    }{space 1}{bind:FKL26    }{bind:  }{res}{res}Kabupaten/Kota faskes perujuk{p_end}
+{p 0 48}{bind:FKL27          }{txt}{bind: byte    }{bind:{txt}%13.0g    }{space 1}{bind:FKL27    }{bind:  }{res}{res}Kepemilikan faskes perujuk{p_end}
+{p 0 48}{bind:FKL28          }{txt}{bind: byte    }{bind:{txt}%14.0g    }{space 1}{bind:FKL28    }{bind:  }{res}{res}Jenis faskes perujuk{p_end}
+{p 0 48}{bind:FKL29          }{txt}{bind: byte    }{bind:{txt}%25.0g    }{space 1}{bind:FKL29    }{bind:  }{res}{res}Tipe faskes perujuk{p_end}
+{p 0 48}{bind:FKL30          }{txt}{bind: strL    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Jenis prosedur{p_end}
+{p 0 48}{bind:FKL31          }{txt}{bind: byte    }{bind:{txt}%10.0g    }{space 1}{bind:FKL31    }{bind:  }{res}{res}Tarif regional INACBGs{p_end}
+{p 0 48}{bind:FKL32          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Group Tarif INACBGs{p_end}
+{p 0 48}{bind:FKL33          }{txt}{bind: str11   }{bind:{txt}%11s      }{space 1}{bind:         }{bind:  }{res}{res}Kode special sub-acute groups (SA){p_end}
+{p 0 48}{bind:FKL34          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Tarif special sub-acute groups (SA){p_end}
+{p 0 48}{bind:FKL35          }{txt}{bind: str9    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode special procedures (SP){p_end}
+{p 0 48}{bind:FKL36          }{txt}{bind: str49   }{bind:{txt}%49s      }{space 1}{bind:         }{bind:  }{res}{res}Deskripsi special procedures (SP){p_end}
+{p 0 48}{bind:FKL37          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Tarif special procedures (SP){p_end}
+{p 0 48}{bind:FKL38          }{txt}{bind: str9    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode special prosthesis (RR){p_end}
+{p 0 48}{bind:FKL39          }{txt}{bind: str27   }{bind:{txt}%27s      }{space 1}{bind:         }{bind:  }{res}{res}Deskripsi special prosthesis (RR){p_end}
+{p 0 48}{bind:FKL40          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Tarif special prosthesis (RR){p_end}
+{p 0 48}{bind:FKL41          }{txt}{bind: str9    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode special investigation(SI){p_end}
+{p 0 48}{bind:FKL42          }{txt}{bind: str39   }{bind:{txt}%39s      }{space 1}{bind:         }{bind:  }{res}{res}Deskripsi special investigation(SI){p_end}
+{p 0 48}{bind:FKL43          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Tarif special investigation(SI){p_end}
+{p 0 48}{bind:FKL44          }{txt}{bind: str8    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}Kode special drugs (SD){p_end}
+{p 0 48}{bind:FKL45          }{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}Deskripsi special drugs (SD){p_end}
+{p 0 48}{bind:FKL46          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Tarif special drugs (SD){p_end}
+{p 0 48}{bind:FKL47          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Biaya Tagih - oleh fasilitas kesehatan (provider){p_end}
+{p 0 48}{bind:FKL48          }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Biaya Verifikasi - BPJS Kesehatan setelah dilakukan verifikasi{p_end}
+{p 0 48}{bind:FKL47PSTV15    }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Biaya Tagih - oleh fasilitas kesehatan (provider) dikali bobot{p_end}
+{p 0 48}{bind:FKL48PSTV15    }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Biaya Verifikasi - BPJS Kesehatan setelah dilakukan verifikasi dikali bobot{p_end}
+{txt}{hline}
+Sorted by: {res}FKL05
+{txt}
+{com}. 
+. collapse (sum) PSTV15 FKL48PSTV15, by(FKL04 FKL05 FKL06)
+{res}{txt}
+{com}. 
+. save "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout.dta", replace
+{txt}{p 0 4 2}
+file {bf}
+D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout.dta{rm}
+saved
+{p_end}
+
+{com}. 
+. export excel using "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout.xlsx", sheet("biayaklaim_kabkota") firstrow(variables) replace
+{res}{txt}file {bf:D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout.xlsx} saved
+
+{com}. 
+. * 6 cities 1 month only
+. 
+. use "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout.dta", clear
+{txt}(BPJS Kesehatan 2021 FKRTL - created:  9 Dec 2022 09:33:49)
+
+{com}. 
+. /* BPS-Sample BPJS K 2021 1275  "KOTA MEDAN" 3171       "KOTA JAKARTA SELATAN" 3172     "KOTA JAKARTA TIMUR" 3173       "KOTA JAKARTA PUSAT" 3174       "KOTA JAKARTA BARAT" 3175       "KOTA JAKARTA UTARA" 3273       "KOTA BANDUNG" 3276     "KOTA DEPOK" 3471       "KOTA YOGYAKARTA" 3578  "KOTA SURABAYA"  5171   "KOTA DENPASAR"
+> */
+. 
+. 
+. *jakarta denpasar bandung surabaya medan yogyakarta/sleman depok
+. *| FKL06 == 3171  | FKL06 == 3172 | FKL06 == 3173 | FKL06 == 3174 | FKL06 == 3175 
+. 
+. keep if FKL06 == 1275 | FKL06 == 3273 | FKL06 == 3276 | FKL06 == 3404 | FKL06 == 3578 | FKL06 == 5171 
+{txt}(3,190 observations deleted)
+
+{com}. *| FKL06 == 3404 
+. ta FKL06
+
+      {txt}Kabupaten/Kota FKRTL {c |}      Freq.     Percent        Cum.
+{hline 27}{c +}{hline 35}
+                KOTA MEDAN {c |}{res}        189       22.21       22.21
+{txt}              KOTA BANDUNG {c |}{res}        198       23.27       45.48
+{txt}                KOTA DEPOK {c |}{res}         93       10.93       56.40
+{txt}                    SLEMAN {c |}{res}         62        7.29       63.69
+{txt}             KOTA SURABAYA {c |}{res}        169       19.86       83.55
+{txt}             KOTA DENPASAR {c |}{res}        140       16.45      100.00
+{txt}{hline 27}{c +}{hline 35}
+                     Total {c |}{res}        851      100.00
+{txt}
+{com}. su FKL06
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 7}FKL06 {c |}{res}        851    3211.947    1223.514       1275       5171
+{txt}
+{com}. codebook FKL06
+
+{txt}{hline}
+{res}FKL06{right:Kabupaten/Kota FKRTL}
+{txt}{hline}
+
+{col 19}Type: Numeric ({res}int{txt})
+{ralign 22:Label}: {res:FKL06}
+
+{col 18}Range: [{res}1275{txt},{res}5171{txt}]{col 55}Units: {res}1
+{col 10}{txt}Unique values: {res}6{col 51}{txt}Missing .: {res}0{txt}/{res}851
+
+{txt}{col 13}Tabulation: Freq.   Numeric  Label
+{col 20}{res}       189{col 32}    1275{col 42}{txt}KOTA MEDAN
+{col 20}{res}       198{col 32}    3273{col 42}{txt}KOTA BANDUNG
+{col 20}{res}        93{col 32}    3276{col 42}{txt}KOTA DEPOK
+{col 20}{res}        62{col 32}    3404{col 42}{txt}SLEMAN
+{col 20}{res}       169{col 32}    3578{col 42}{txt}KOTA SURABAYA
+{col 20}{res}       140{col 32}    5171{col 42}{txt}KOTA DENPASAR
+
+{com}. 
+. desc
+
+{txt}Contains data from {res}D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout.dta
+{txt} Observations:{res}           851                  BPJS Kesehatan 2021 FKRTL - created:  9 Dec 2022
+                                                09:33:49
+{txt}    Variables:{res}             5                  8 Dec 2023 09:27
+{txt}{hline}
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+{hline}
+{p 0 48}{res}{bind:FKL04          }{txt}{bind: int     }{bind:{txt}%td       }{space 1}{bind:         }{bind:  }{res}{res}Tanggal pulang kunjungan FKRTL{p_end}
+{p 0 48}{bind:FKL05          }{txt}{bind: byte    }{bind:{txt}%26.0g    }{space 1}{bind:FKL05    }{bind:  }{res}{res}Provinsi FKRTL{p_end}
+{p 0 48}{bind:FKL06          }{txt}{bind: int     }{bind:{txt}%26.0g    }{space 1}{bind:FKL06    }{bind:  }{res}{res}Kabupaten/Kota FKRTL{p_end}
+{p 0 48}{bind:PSTV15         }{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}(sum) PSTV15{p_end}
+{p 0 48}{bind:FKL48PSTV15    }{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}(sum) FKL48PSTV15{p_end}
+{txt}{hline}
+Sorted by: {res}FKL04  FKL05  FKL06
+     Note: Dataset has changed since last saved.
+{txt}
+{com}. 
+. ta FKL04
+
+    {txt}Tanggal {c |}
+     pulang {c |}
+  kunjungan {c |}
+      FKRTL {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+  01jan2021 {c |}{res}          2        0.24        0.24
+{txt}  02jan2021 {c |}{res}          3        0.35        0.59
+{txt}  03jan2021 {c |}{res}          1        0.12        0.71
+{txt}  04jan2021 {c |}{res}          3        0.35        1.06
+{txt}  05jan2021 {c |}{res}          1        0.12        1.18
+{txt}  06jan2021 {c |}{res}          4        0.47        1.65
+{txt}  07jan2021 {c |}{res}          2        0.24        1.88
+{txt}  08jan2021 {c |}{res}          1        0.12        2.00
+{txt}  09jan2021 {c |}{res}          3        0.35        2.35
+{txt}  10jan2021 {c |}{res}          1        0.12        2.47
+{txt}  11jan2021 {c |}{res}          3        0.35        2.82
+{txt}  12jan2021 {c |}{res}          3        0.35        3.17
+{txt}  13jan2021 {c |}{res}          3        0.35        3.53
+{txt}  14jan2021 {c |}{res}          3        0.35        3.88
+{txt}  15jan2021 {c |}{res}          3        0.35        4.23
+{txt}  16jan2021 {c |}{res}          1        0.12        4.35
+{txt}  17jan2021 {c |}{res}          2        0.24        4.58
+{txt}  18jan2021 {c |}{res}          2        0.24        4.82
+{txt}  19jan2021 {c |}{res}          3        0.35        5.17
+{txt}  20jan2021 {c |}{res}          3        0.35        5.52
+{txt}  21jan2021 {c |}{res}          2        0.24        5.76
+{txt}  22jan2021 {c |}{res}          5        0.59        6.35
+{txt}  23jan2021 {c |}{res}          1        0.12        6.46
+{txt}  24jan2021 {c |}{res}          2        0.24        6.70
+{txt}  25jan2021 {c |}{res}          2        0.24        6.93
+{txt}  26jan2021 {c |}{res}          4        0.47        7.40
+{txt}  27jan2021 {c |}{res}          1        0.12        7.52
+{txt}  28jan2021 {c |}{res}          4        0.47        7.99
+{txt}  29jan2021 {c |}{res}          1        0.12        8.11
+{txt}  30jan2021 {c |}{res}          2        0.24        8.34
+{txt}  31jan2021 {c |}{res}          1        0.12        8.46
+{txt}  01feb2021 {c |}{res}          2        0.24        8.70
+{txt}  02feb2021 {c |}{res}          2        0.24        8.93
+{txt}  03feb2021 {c |}{res}          3        0.35        9.28
+{txt}  04feb2021 {c |}{res}          3        0.35        9.64
+{txt}  06feb2021 {c |}{res}          3        0.35        9.99
+{txt}  08feb2021 {c |}{res}          3        0.35       10.34
+{txt}  09feb2021 {c |}{res}          2        0.24       10.58
+{txt}  10feb2021 {c |}{res}          2        0.24       10.81
+{txt}  11feb2021 {c |}{res}          1        0.12       10.93
+{txt}  12feb2021 {c |}{res}          1        0.12       11.05
+{txt}  13feb2021 {c |}{res}          1        0.12       11.16
+{txt}  14feb2021 {c |}{res}          1        0.12       11.28
+{txt}  15feb2021 {c |}{res}          3        0.35       11.63
+{txt}  16feb2021 {c |}{res}          3        0.35       11.99
+{txt}  17feb2021 {c |}{res}          2        0.24       12.22
+{txt}  18feb2021 {c |}{res}          3        0.35       12.57
+{txt}  19feb2021 {c |}{res}          3        0.35       12.93
+{txt}  20feb2021 {c |}{res}          2        0.24       13.16
+{txt}  21feb2021 {c |}{res}          2        0.24       13.40
+{txt}  22feb2021 {c |}{res}          4        0.47       13.87
+{txt}  24feb2021 {c |}{res}          3        0.35       14.22
+{txt}  25feb2021 {c |}{res}          2        0.24       14.45
+{txt}  26feb2021 {c |}{res}          3        0.35       14.81
+{txt}  27feb2021 {c |}{res}          2        0.24       15.04
+{txt}  28feb2021 {c |}{res}          2        0.24       15.28
+{txt}  02mar2021 {c |}{res}          2        0.24       15.51
+{txt}  03mar2021 {c |}{res}          4        0.47       15.98
+{txt}  04mar2021 {c |}{res}          2        0.24       16.22
+{txt}  05mar2021 {c |}{res}          4        0.47       16.69
+{txt}  06mar2021 {c |}{res}          2        0.24       16.92
+{txt}  07mar2021 {c |}{res}          3        0.35       17.27
+{txt}  08mar2021 {c |}{res}          5        0.59       17.86
+{txt}  09mar2021 {c |}{res}          2        0.24       18.10
+{txt}  10mar2021 {c |}{res}          3        0.35       18.45
+{txt}  12mar2021 {c |}{res}          3        0.35       18.80
+{txt}  13mar2021 {c |}{res}          2        0.24       19.04
+{txt}  14mar2021 {c |}{res}          2        0.24       19.27
+{txt}  15mar2021 {c |}{res}          1        0.12       19.39
+{txt}  17mar2021 {c |}{res}          2        0.24       19.62
+{txt}  18mar2021 {c |}{res}          3        0.35       19.98
+{txt}  19mar2021 {c |}{res}          1        0.12       20.09
+{txt}  20mar2021 {c |}{res}          3        0.35       20.45
+{txt}  21mar2021 {c |}{res}          3        0.35       20.80
+{txt}  22mar2021 {c |}{res}          2        0.24       21.03
+{txt}  23mar2021 {c |}{res}          2        0.24       21.27
+{txt}  24mar2021 {c |}{res}          3        0.35       21.62
+{txt}  25mar2021 {c |}{res}          2        0.24       21.86
+{txt}  26mar2021 {c |}{res}          1        0.12       21.97
+{txt}  27mar2021 {c |}{res}          3        0.35       22.33
+{txt}  28mar2021 {c |}{res}          2        0.24       22.56
+{txt}  29mar2021 {c |}{res}          1        0.12       22.68
+{txt}  30mar2021 {c |}{res}          2        0.24       22.91
+{txt}  31mar2021 {c |}{res}          1        0.12       23.03
+{txt}  01apr2021 {c |}{res}          2        0.24       23.27
+{txt}  02apr2021 {c |}{res}          3        0.35       23.62
+{txt}  03apr2021 {c |}{res}          2        0.24       23.85
+{txt}  04apr2021 {c |}{res}          2        0.24       24.09
+{txt}  05apr2021 {c |}{res}          3        0.35       24.44
+{txt}  06apr2021 {c |}{res}          2        0.24       24.68
+{txt}  07apr2021 {c |}{res}          2        0.24       24.91
+{txt}  08apr2021 {c |}{res}          4        0.47       25.38
+{txt}  09apr2021 {c |}{res}          3        0.35       25.73
+{txt}  10apr2021 {c |}{res}          2        0.24       25.97
+{txt}  11apr2021 {c |}{res}          2        0.24       26.20
+{txt}  12apr2021 {c |}{res}          3        0.35       26.56
+{txt}  13apr2021 {c |}{res}          3        0.35       26.91
+{txt}  14apr2021 {c |}{res}          1        0.12       27.03
+{txt}  15apr2021 {c |}{res}          2        0.24       27.26
+{txt}  16apr2021 {c |}{res}          2        0.24       27.50
+{txt}  17apr2021 {c |}{res}          2        0.24       27.73
+{txt}  18apr2021 {c |}{res}          1        0.12       27.85
+{txt}  19apr2021 {c |}{res}          2        0.24       28.08
+{txt}  20apr2021 {c |}{res}          5        0.59       28.67
+{txt}  21apr2021 {c |}{res}          2        0.24       28.91
+{txt}  22apr2021 {c |}{res}          2        0.24       29.14
+{txt}  23apr2021 {c |}{res}          3        0.35       29.49
+{txt}  24apr2021 {c |}{res}          1        0.12       29.61
+{txt}  25apr2021 {c |}{res}          4        0.47       30.08
+{txt}  26apr2021 {c |}{res}          2        0.24       30.32
+{txt}  27apr2021 {c |}{res}          3        0.35       30.67
+{txt}  28apr2021 {c |}{res}          3        0.35       31.02
+{txt}  29apr2021 {c |}{res}          3        0.35       31.37
+{txt}  30apr2021 {c |}{res}          1        0.12       31.49
+{txt}  01may2021 {c |}{res}          1        0.12       31.61
+{txt}  02may2021 {c |}{res}          2        0.24       31.84
+{txt}  03may2021 {c |}{res}          1        0.12       31.96
+{txt}  04may2021 {c |}{res}          4        0.47       32.43
+{txt}  05may2021 {c |}{res}          4        0.47       32.90
+{txt}  06may2021 {c |}{res}          2        0.24       33.14
+{txt}  07may2021 {c |}{res}          5        0.59       33.73
+{txt}  08may2021 {c |}{res}          5        0.59       34.31
+{txt}  09may2021 {c |}{res}          1        0.12       34.43
+{txt}  10may2021 {c |}{res}          1        0.12       34.55
+{txt}  11may2021 {c |}{res}          3        0.35       34.90
+{txt}  12may2021 {c |}{res}          3        0.35       35.25
+{txt}  13may2021 {c |}{res}          3        0.35       35.61
+{txt}  15may2021 {c |}{res}          1        0.12       35.72
+{txt}  16may2021 {c |}{res}          4        0.47       36.19
+{txt}  17may2021 {c |}{res}          4        0.47       36.66
+{txt}  18may2021 {c |}{res}          2        0.24       36.90
+{txt}  19may2021 {c |}{res}          3        0.35       37.25
+{txt}  20may2021 {c |}{res}          2        0.24       37.49
+{txt}  21may2021 {c |}{res}          2        0.24       37.72
+{txt}  22may2021 {c |}{res}          1        0.12       37.84
+{txt}  24may2021 {c |}{res}          4        0.47       38.31
+{txt}  25may2021 {c |}{res}          2        0.24       38.54
+{txt}  26may2021 {c |}{res}          4        0.47       39.01
+{txt}  27may2021 {c |}{res}          5        0.59       39.60
+{txt}  28may2021 {c |}{res}          4        0.47       40.07
+{txt}  29may2021 {c |}{res}          2        0.24       40.31
+{txt}  30may2021 {c |}{res}          3        0.35       40.66
+{txt}  31may2021 {c |}{res}          2        0.24       40.89
+{txt}  01jun2021 {c |}{res}          1        0.12       41.01
+{txt}  02jun2021 {c |}{res}          1        0.12       41.13
+{txt}  03jun2021 {c |}{res}          2        0.24       41.36
+{txt}  04jun2021 {c |}{res}          3        0.35       41.72
+{txt}  05jun2021 {c |}{res}          2        0.24       41.95
+{txt}  06jun2021 {c |}{res}          1        0.12       42.07
+{txt}  07jun2021 {c |}{res}          3        0.35       42.42
+{txt}  08jun2021 {c |}{res}          2        0.24       42.66
+{txt}  09jun2021 {c |}{res}          4        0.47       43.13
+{txt}  10jun2021 {c |}{res}          2        0.24       43.36
+{txt}  11jun2021 {c |}{res}          2        0.24       43.60
+{txt}  12jun2021 {c |}{res}          2        0.24       43.83
+{txt}  13jun2021 {c |}{res}          3        0.35       44.18
+{txt}  14jun2021 {c |}{res}          1        0.12       44.30
+{txt}  15jun2021 {c |}{res}          3        0.35       44.65
+{txt}  16jun2021 {c |}{res}          3        0.35       45.01
+{txt}  17jun2021 {c |}{res}          3        0.35       45.36
+{txt}  18jun2021 {c |}{res}          3        0.35       45.71
+{txt}  19jun2021 {c |}{res}          1        0.12       45.83
+{txt}  20jun2021 {c |}{res}          1        0.12       45.95
+{txt}  21jun2021 {c |}{res}          3        0.35       46.30
+{txt}  22jun2021 {c |}{res}          4        0.47       46.77
+{txt}  23jun2021 {c |}{res}          3        0.35       47.12
+{txt}  24jun2021 {c |}{res}          3        0.35       47.47
+{txt}  25jun2021 {c |}{res}          3        0.35       47.83
+{txt}  26jun2021 {c |}{res}          2        0.24       48.06
+{txt}  27jun2021 {c |}{res}          2        0.24       48.30
+{txt}  28jun2021 {c |}{res}          4        0.47       48.77
+{txt}  29jun2021 {c |}{res}          3        0.35       49.12
+{txt}  30jun2021 {c |}{res}          2        0.24       49.35
+{txt}  02jul2021 {c |}{res}          3        0.35       49.71
+{txt}  03jul2021 {c |}{res}          3        0.35       50.06
+{txt}  04jul2021 {c |}{res}          3        0.35       50.41
+{txt}  06jul2021 {c |}{res}          3        0.35       50.76
+{txt}  07jul2021 {c |}{res}          3        0.35       51.12
+{txt}  08jul2021 {c |}{res}          4        0.47       51.59
+{txt}  09jul2021 {c |}{res}          1        0.12       51.70
+{txt}  10jul2021 {c |}{res}          2        0.24       51.94
+{txt}  11jul2021 {c |}{res}          2        0.24       52.17
+{txt}  12jul2021 {c |}{res}          2        0.24       52.41
+{txt}  13jul2021 {c |}{res}          3        0.35       52.76
+{txt}  14jul2021 {c |}{res}          4        0.47       53.23
+{txt}  15jul2021 {c |}{res}          3        0.35       53.58
+{txt}  16jul2021 {c |}{res}          4        0.47       54.05
+{txt}  17jul2021 {c |}{res}          3        0.35       54.41
+{txt}  18jul2021 {c |}{res}          3        0.35       54.76
+{txt}  19jul2021 {c |}{res}          4        0.47       55.23
+{txt}  20jul2021 {c |}{res}          1        0.12       55.35
+{txt}  21jul2021 {c |}{res}          4        0.47       55.82
+{txt}  22jul2021 {c |}{res}          2        0.24       56.05
+{txt}  23jul2021 {c |}{res}          3        0.35       56.40
+{txt}  26jul2021 {c |}{res}          3        0.35       56.76
+{txt}  27jul2021 {c |}{res}          3        0.35       57.11
+{txt}  28jul2021 {c |}{res}          3        0.35       57.46
+{txt}  29jul2021 {c |}{res}          3        0.35       57.81
+{txt}  31jul2021 {c |}{res}          2        0.24       58.05
+{txt}  01aug2021 {c |}{res}          2        0.24       58.28
+{txt}  02aug2021 {c |}{res}          3        0.35       58.64
+{txt}  03aug2021 {c |}{res}          2        0.24       58.87
+{txt}  05aug2021 {c |}{res}          2        0.24       59.11
+{txt}  06aug2021 {c |}{res}          3        0.35       59.46
+{txt}  07aug2021 {c |}{res}          1        0.12       59.58
+{txt}  08aug2021 {c |}{res}          1        0.12       59.69
+{txt}  09aug2021 {c |}{res}          2        0.24       59.93
+{txt}  10aug2021 {c |}{res}          2        0.24       60.16
+{txt}  12aug2021 {c |}{res}          3        0.35       60.52
+{txt}  13aug2021 {c |}{res}          2        0.24       60.75
+{txt}  14aug2021 {c |}{res}          1        0.12       60.87
+{txt}  15aug2021 {c |}{res}          2        0.24       61.10
+{txt}  16aug2021 {c |}{res}          3        0.35       61.46
+{txt}  17aug2021 {c |}{res}          1        0.12       61.57
+{txt}  18aug2021 {c |}{res}          1        0.12       61.69
+{txt}  19aug2021 {c |}{res}          4        0.47       62.16
+{txt}  20aug2021 {c |}{res}          4        0.47       62.63
+{txt}  21aug2021 {c |}{res}          4        0.47       63.10
+{txt}  22aug2021 {c |}{res}          1        0.12       63.22
+{txt}  23aug2021 {c |}{res}          1        0.12       63.34
+{txt}  24aug2021 {c |}{res}          3        0.35       63.69
+{txt}  25aug2021 {c |}{res}          2        0.24       63.92
+{txt}  26aug2021 {c |}{res}          2        0.24       64.16
+{txt}  27aug2021 {c |}{res}          2        0.24       64.39
+{txt}  28aug2021 {c |}{res}          4        0.47       64.86
+{txt}  29aug2021 {c |}{res}          1        0.12       64.98
+{txt}  30aug2021 {c |}{res}          4        0.47       65.45
+{txt}  31aug2021 {c |}{res}          4        0.47       65.92
+{txt}  01sep2021 {c |}{res}          2        0.24       66.16
+{txt}  02sep2021 {c |}{res}          3        0.35       66.51
+{txt}  03sep2021 {c |}{res}          4        0.47       66.98
+{txt}  04sep2021 {c |}{res}          1        0.12       67.10
+{txt}  05sep2021 {c |}{res}          1        0.12       67.22
+{txt}  06sep2021 {c |}{res}          3        0.35       67.57
+{txt}  07sep2021 {c |}{res}          1        0.12       67.69
+{txt}  08sep2021 {c |}{res}          5        0.59       68.27
+{txt}  09sep2021 {c |}{res}          2        0.24       68.51
+{txt}  10sep2021 {c |}{res}          3        0.35       68.86
+{txt}  11sep2021 {c |}{res}          4        0.47       69.33
+{txt}  12sep2021 {c |}{res}          1        0.12       69.45
+{txt}  13sep2021 {c |}{res}          2        0.24       69.68
+{txt}  14sep2021 {c |}{res}          3        0.35       70.04
+{txt}  15sep2021 {c |}{res}          4        0.47       70.51
+{txt}  16sep2021 {c |}{res}          3        0.35       70.86
+{txt}  17sep2021 {c |}{res}          4        0.47       71.33
+{txt}  18sep2021 {c |}{res}          1        0.12       71.45
+{txt}  20sep2021 {c |}{res}          4        0.47       71.92
+{txt}  21sep2021 {c |}{res}          1        0.12       72.03
+{txt}  22sep2021 {c |}{res}          1        0.12       72.15
+{txt}  23sep2021 {c |}{res}          2        0.24       72.39
+{txt}  24sep2021 {c |}{res}          1        0.12       72.50
+{txt}  25sep2021 {c |}{res}          4        0.47       72.97
+{txt}  26sep2021 {c |}{res}          2        0.24       73.21
+{txt}  27sep2021 {c |}{res}          4        0.47       73.68
+{txt}  28sep2021 {c |}{res}          2        0.24       73.91
+{txt}  29sep2021 {c |}{res}          4        0.47       74.38
+{txt}  30sep2021 {c |}{res}          4        0.47       74.85
+{txt}  01oct2021 {c |}{res}          3        0.35       75.21
+{txt}  02oct2021 {c |}{res}          1        0.12       75.32
+{txt}  03oct2021 {c |}{res}          3        0.35       75.68
+{txt}  04oct2021 {c |}{res}          2        0.24       75.91
+{txt}  05oct2021 {c |}{res}          3        0.35       76.26
+{txt}  06oct2021 {c |}{res}          2        0.24       76.50
+{txt}  07oct2021 {c |}{res}          2        0.24       76.73
+{txt}  08oct2021 {c |}{res}          3        0.35       77.09
+{txt}  09oct2021 {c |}{res}          2        0.24       77.32
+{txt}  10oct2021 {c |}{res}          2        0.24       77.56
+{txt}  11oct2021 {c |}{res}          4        0.47       78.03
+{txt}  12oct2021 {c |}{res}          2        0.24       78.26
+{txt}  13oct2021 {c |}{res}          1        0.12       78.38
+{txt}  14oct2021 {c |}{res}          1        0.12       78.50
+{txt}  15oct2021 {c |}{res}          3        0.35       78.85
+{txt}  16oct2021 {c |}{res}          4        0.47       79.32
+{txt}  17oct2021 {c |}{res}          1        0.12       79.44
+{txt}  18oct2021 {c |}{res}          2        0.24       79.67
+{txt}  19oct2021 {c |}{res}          5        0.59       80.26
+{txt}  21oct2021 {c |}{res}          2        0.24       80.49
+{txt}  22oct2021 {c |}{res}          2        0.24       80.73
+{txt}  23oct2021 {c |}{res}          2        0.24       80.96
+{txt}  25oct2021 {c |}{res}          3        0.35       81.32
+{txt}  26oct2021 {c |}{res}          3        0.35       81.67
+{txt}  27oct2021 {c |}{res}          2        0.24       81.90
+{txt}  29oct2021 {c |}{res}          2        0.24       82.14
+{txt}  31oct2021 {c |}{res}          1        0.12       82.26
+{txt}  01nov2021 {c |}{res}          4        0.47       82.73
+{txt}  02nov2021 {c |}{res}          3        0.35       83.08
+{txt}  03nov2021 {c |}{res}          1        0.12       83.20
+{txt}  04nov2021 {c |}{res}          4        0.47       83.67
+{txt}  05nov2021 {c |}{res}          1        0.12       83.78
+{txt}  07nov2021 {c |}{res}          1        0.12       83.90
+{txt}  08nov2021 {c |}{res}          4        0.47       84.37
+{txt}  09nov2021 {c |}{res}          2        0.24       84.61
+{txt}  10nov2021 {c |}{res}          2        0.24       84.84
+{txt}  11nov2021 {c |}{res}          1        0.12       84.96
+{txt}  12nov2021 {c |}{res}          4        0.47       85.43
+{txt}  13nov2021 {c |}{res}          3        0.35       85.78
+{txt}  14nov2021 {c |}{res}          1        0.12       85.90
+{txt}  15nov2021 {c |}{res}          1        0.12       86.02
+{txt}  16nov2021 {c |}{res}          4        0.47       86.49
+{txt}  17nov2021 {c |}{res}          2        0.24       86.72
+{txt}  18nov2021 {c |}{res}          4        0.47       87.19
+{txt}  19nov2021 {c |}{res}          1        0.12       87.31
+{txt}  20nov2021 {c |}{res}          2        0.24       87.54
+{txt}  21nov2021 {c |}{res}          1        0.12       87.66
+{txt}  22nov2021 {c |}{res}          2        0.24       87.90
+{txt}  23nov2021 {c |}{res}          1        0.12       88.01
+{txt}  25nov2021 {c |}{res}          1        0.12       88.13
+{txt}  26nov2021 {c |}{res}          3        0.35       88.48
+{txt}  27nov2021 {c |}{res}          2        0.24       88.72
+{txt}  28nov2021 {c |}{res}          3        0.35       89.07
+{txt}  29nov2021 {c |}{res}          2        0.24       89.31
+{txt}  30nov2021 {c |}{res}          4        0.47       89.78
+{txt}  01dec2021 {c |}{res}          4        0.47       90.25
+{txt}  02dec2021 {c |}{res}          3        0.35       90.60
+{txt}  03dec2021 {c |}{res}          2        0.24       90.83
+{txt}  04dec2021 {c |}{res}          4        0.47       91.30
+{txt}  05dec2021 {c |}{res}          3        0.35       91.66
+{txt}  06dec2021 {c |}{res}          3        0.35       92.01
+{txt}  07dec2021 {c |}{res}          2        0.24       92.24
+{txt}  08dec2021 {c |}{res}          2        0.24       92.48
+{txt}  09dec2021 {c |}{res}          1        0.12       92.60
+{txt}  10dec2021 {c |}{res}          3        0.35       92.95
+{txt}  11dec2021 {c |}{res}          2        0.24       93.18
+{txt}  13dec2021 {c |}{res}          3        0.35       93.54
+{txt}  14dec2021 {c |}{res}          1        0.12       93.65
+{txt}  15dec2021 {c |}{res}          2        0.24       93.89
+{txt}  16dec2021 {c |}{res}          5        0.59       94.48
+{txt}  17dec2021 {c |}{res}          2        0.24       94.71
+{txt}  18dec2021 {c |}{res}          4        0.47       95.18
+{txt}  19dec2021 {c |}{res}          3        0.35       95.53
+{txt}  20dec2021 {c |}{res}          2        0.24       95.77
+{txt}  21dec2021 {c |}{res}          3        0.35       96.12
+{txt}  22dec2021 {c |}{res}          5        0.59       96.71
+{txt}  23dec2021 {c |}{res}          4        0.47       97.18
+{txt}  24dec2021 {c |}{res}          5        0.59       97.77
+{txt}  25dec2021 {c |}{res}          2        0.24       98.00
+{txt}  26dec2021 {c |}{res}          3        0.35       98.35
+{txt}  27dec2021 {c |}{res}          4        0.47       98.82
+{txt}  28dec2021 {c |}{res}          3        0.35       99.18
+{txt}  29dec2021 {c |}{res}          2        0.24       99.41
+{txt}  30dec2021 {c |}{res}          1        0.12       99.53
+{txt}  31dec2021 {c |}{res}          4        0.47      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        851      100.00
+{txt}
+{com}. 
+. *keep if FKL04 == 01dec2021
+. *keep if FKL04 == 01122021
+. 
+. *keep if FKL04 == 01122021 | FKL04 == 02122021 | FKL04 == 03122021 | FKL04 == 04122021 | FKL04 == 05122021 | FKL04 == 06122021 | FKL04 == 07122021 | FKL04 == 08122021 | FKL04 == 09122021 | FKL04 == 10122021 | FKL04 == 11122021 | FKL04 == 12122021 | FKL04 == 13122021 | FKL04 == 14122021 | FKL04 == 15122021 | FKL04 == 16122021 | FKL04 == 17122021 | FKL04 == 18122021 | FKL04 == 19122021 | FKL04 == 20122021 | FKL04 == 21122021 | FKL04 == 22122021 | FKL04 == 23122021 | FKL04 == 24122021 | FKL04 == 25122021 | FKL04 == 26122021 | FKL04 == 27122021 | FKL04 == 28122021 | FKL04 == 29122021 | FKL04 == 30122021 | FKL04 == 31122021
+. 
+. // encode FKL04, gen(FKL04encode)
+. gen strFKL04 = string(FKL04,"%td")
+{txt}
+{com}. 
+. *tostring FKL04, gen(FKL04str)
+. gen year = substr(strFKL04,-7,7) 
+{txt}
+{com}. gen month = substr(strFKL04,3,3) 
+{txt}
+{com}. keep if month == "dec"
+{txt}(764 observations deleted)
+
+{com}. 
+. *drop FKL04str
+. drop strFKL04 year month
+{txt}
+{com}. 
+. ta FKL04
+
+    {txt}Tanggal {c |}
+     pulang {c |}
+  kunjungan {c |}
+      FKRTL {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+  01dec2021 {c |}{res}          4        4.60        4.60
+{txt}  02dec2021 {c |}{res}          3        3.45        8.05
+{txt}  03dec2021 {c |}{res}          2        2.30       10.34
+{txt}  04dec2021 {c |}{res}          4        4.60       14.94
+{txt}  05dec2021 {c |}{res}          3        3.45       18.39
+{txt}  06dec2021 {c |}{res}          3        3.45       21.84
+{txt}  07dec2021 {c |}{res}          2        2.30       24.14
+{txt}  08dec2021 {c |}{res}          2        2.30       26.44
+{txt}  09dec2021 {c |}{res}          1        1.15       27.59
+{txt}  10dec2021 {c |}{res}          3        3.45       31.03
+{txt}  11dec2021 {c |}{res}          2        2.30       33.33
+{txt}  13dec2021 {c |}{res}          3        3.45       36.78
+{txt}  14dec2021 {c |}{res}          1        1.15       37.93
+{txt}  15dec2021 {c |}{res}          2        2.30       40.23
+{txt}  16dec2021 {c |}{res}          5        5.75       45.98
+{txt}  17dec2021 {c |}{res}          2        2.30       48.28
+{txt}  18dec2021 {c |}{res}          4        4.60       52.87
+{txt}  19dec2021 {c |}{res}          3        3.45       56.32
+{txt}  20dec2021 {c |}{res}          2        2.30       58.62
+{txt}  21dec2021 {c |}{res}          3        3.45       62.07
+{txt}  22dec2021 {c |}{res}          5        5.75       67.82
+{txt}  23dec2021 {c |}{res}          4        4.60       72.41
+{txt}  24dec2021 {c |}{res}          5        5.75       78.16
+{txt}  25dec2021 {c |}{res}          2        2.30       80.46
+{txt}  26dec2021 {c |}{res}          3        3.45       83.91
+{txt}  27dec2021 {c |}{res}          4        4.60       88.51
+{txt}  28dec2021 {c |}{res}          3        3.45       91.95
+{txt}  29dec2021 {c |}{res}          2        2.30       94.25
+{txt}  30dec2021 {c |}{res}          1        1.15       95.40
+{txt}  31dec2021 {c |}{res}          4        4.60      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         87      100.00
+{txt}
+{com}. su FKL04
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 7}FKL04 {c |}{res}         87    22630.54    9.168709      22615      22645
+{txt}
+{com}. codebook FKL04
+
+{txt}{hline}
+{res}FKL04{right:Tanggal pulang kunjungan FKRTL}
+{txt}{hline}
+
+{col 19}Type: Numeric daily date ({res}int{txt})
+
+{col 18}Range: [{res}22615{txt},{res}22645{txt}]{col 55}Units: {res}1
+{col 8}{txt}Or equivalently: [{res}01dec2021{txt},{res}31dec2021{txt}]{col 55}Units: {res}days
+{col 10}{txt}Unique values: {res}30{col 51}{txt}Missing .: {res}0{txt}/{res}87
+
+{txt}{col 19}Mean: {res}{ralign 7:22630.5}{txt} = {res}16dec2021{txt}(+ 13 hours)
+{col 14}Std. dev.: {res}{ralign 7:9.16871}
+{txt}{col 12}Percentiles: {col 25}{ralign 9:10%}{ralign 11:25%}{ralign 11:50%}{ralign 11:75%}{ralign 11:90%}
+{res}{col 25}{ralign 9:22617}{ralign 11:   22622}{ralign 11:   22632}{ralign 11:   22638}{ralign 11:   22642}
+{col 25}{ralign 9:03dec2021}{ralign 11:08dec2021}{ralign 11:18dec2021}{ralign 11:24dec2021}{ralign 11:28dec2021}
+{txt}
+{com}. 
+. save "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout 6cities yogyatosleman.dta", replace
+{txt}{p 0 4 2}
+file {bf}
+D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout 6cities yogyatosleman.dta{rm}
+saved
+{p_end}
+
+{com}. 
+. 
+. * 1 province 1 month only
+. 
+. use "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout.dta", clear
+{txt}(BPJS Kesehatan 2021 FKRTL - created:  9 Dec 2022 09:33:49)
+
+{com}. 
+. /* BPS-Sample BPJS K 2021 1275  "KOTA MEDAN" 3171       "KOTA JAKARTA SELATAN" 3172     "KOTA JAKARTA TIMUR" 3173       "KOTA JAKARTA PUSAT" 3174       "KOTA JAKARTA BARAT" 3175       "KOTA JAKARTA UTARA" 3273       "KOTA BANDUNG" 3276     "KOTA DEPOK" 3471       "KOTA YOGYAKARTA" 3578  "KOTA SURABAYA"  5171   "KOTA DENPASAR"
+> */
+. 
+. 
+. *jakarta denpasar bandung surabaya medan yogyakarta depok
+. keep if FKL06 == 3171  | FKL06 == 3172 | FKL06 == 3173 | FKL06 == 3174 | FKL06 == 3175 
+{txt}(3,575 observations deleted)
+
+{com}. 
+. *keep if FKL06 == 1275 | FKL06 == 3273 | FKL06 == 3276 | FKL06 == 3471 | FKL06 == 3578 | FKL06 == 5171 
+. 
+. ta FKL06
+
+      {txt}Kabupaten/Kota FKRTL {c |}      Freq.     Percent        Cum.
+{hline 27}{c +}{hline 35}
+      KOTA JAKARTA SELATAN {c |}{res}         87       18.67       18.67
+{txt}        KOTA JAKARTA TIMUR {c |}{res}        164       35.19       53.86
+{txt}        KOTA JAKARTA PUSAT {c |}{res}         61       13.09       66.95
+{txt}        KOTA JAKARTA BARAT {c |}{res}         64       13.73       80.69
+{txt}        KOTA JAKARTA UTARA {c |}{res}         90       19.31      100.00
+{txt}{hline 27}{c +}{hline 35}
+                     Total {c |}{res}        466      100.00
+{txt}
+{com}. su FKL06
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 7}FKL06 {c |}{res}        466    3172.798    1.404324       3171       3175
+{txt}
+{com}. codebook FKL06
+
+{txt}{hline}
+{res}FKL06{right:Kabupaten/Kota FKRTL}
+{txt}{hline}
+
+{col 19}Type: Numeric ({res}int{txt})
+{ralign 22:Label}: {res:FKL06}
+
+{col 18}Range: [{res}3171{txt},{res}3175{txt}]{col 55}Units: {res}1
+{col 10}{txt}Unique values: {res}5{col 51}{txt}Missing .: {res}0{txt}/{res}466
+
+{txt}{col 13}Tabulation: Freq.   Numeric  Label
+{col 20}{res}        87{col 32}    3171{col 42}{txt}KOTA JAKARTA SELATAN
+{col 20}{res}       164{col 32}    3172{col 42}{txt}KOTA JAKARTA TIMUR
+{col 20}{res}        61{col 32}    3173{col 42}{txt}KOTA JAKARTA PUSAT
+{col 20}{res}        64{col 32}    3174{col 42}{txt}KOTA JAKARTA BARAT
+{col 20}{res}        90{col 32}    3175{col 42}{txt}KOTA JAKARTA UTARA
+
+{com}. 
+. desc
+
+{txt}Contains data from {res}D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout.dta
+{txt} Observations:{res}           466                  BPJS Kesehatan 2021 FKRTL - created:  9 Dec 2022
+                                                09:33:49
+{txt}    Variables:{res}             5                  8 Dec 2023 09:27
+{txt}{hline}
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+{hline}
+{p 0 48}{res}{bind:FKL04          }{txt}{bind: int     }{bind:{txt}%td       }{space 1}{bind:         }{bind:  }{res}{res}Tanggal pulang kunjungan FKRTL{p_end}
+{p 0 48}{bind:FKL05          }{txt}{bind: byte    }{bind:{txt}%26.0g    }{space 1}{bind:FKL05    }{bind:  }{res}{res}Provinsi FKRTL{p_end}
+{p 0 48}{bind:FKL06          }{txt}{bind: int     }{bind:{txt}%26.0g    }{space 1}{bind:FKL06    }{bind:  }{res}{res}Kabupaten/Kota FKRTL{p_end}
+{p 0 48}{bind:PSTV15         }{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}(sum) PSTV15{p_end}
+{p 0 48}{bind:FKL48PSTV15    }{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}(sum) FKL48PSTV15{p_end}
+{txt}{hline}
+Sorted by: {res}FKL04  FKL05  FKL06
+     Note: Dataset has changed since last saved.
+{txt}
+{com}. 
+. ta FKL04
+
+    {txt}Tanggal {c |}
+     pulang {c |}
+  kunjungan {c |}
+      FKRTL {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+  02jan2021 {c |}{res}          1        0.21        0.21
+{txt}  04jan2021 {c |}{res}          2        0.43        0.64
+{txt}  05jan2021 {c |}{res}          1        0.21        0.86
+{txt}  06jan2021 {c |}{res}          2        0.43        1.29
+{txt}  07jan2021 {c |}{res}          1        0.21        1.50
+{txt}  08jan2021 {c |}{res}          2        0.43        1.93
+{txt}  09jan2021 {c |}{res}          1        0.21        2.15
+{txt}  11jan2021 {c |}{res}          2        0.43        2.58
+{txt}  12jan2021 {c |}{res}          2        0.43        3.00
+{txt}  13jan2021 {c |}{res}          2        0.43        3.43
+{txt}  15jan2021 {c |}{res}          1        0.21        3.65
+{txt}  16jan2021 {c |}{res}          1        0.21        3.86
+{txt}  17jan2021 {c |}{res}          1        0.21        4.08
+{txt}  18jan2021 {c |}{res}          2        0.43        4.51
+{txt}  19jan2021 {c |}{res}          1        0.21        4.72
+{txt}  23jan2021 {c |}{res}          1        0.21        4.94
+{txt}  27jan2021 {c |}{res}          2        0.43        5.36
+{txt}  28jan2021 {c |}{res}          1        0.21        5.58
+{txt}  29jan2021 {c |}{res}          1        0.21        5.79
+{txt}  02feb2021 {c |}{res}          1        0.21        6.01
+{txt}  03feb2021 {c |}{res}          3        0.64        6.65
+{txt}  05feb2021 {c |}{res}          4        0.86        7.51
+{txt}  06feb2021 {c |}{res}          2        0.43        7.94
+{txt}  07feb2021 {c |}{res}          1        0.21        8.15
+{txt}  08feb2021 {c |}{res}          1        0.21        8.37
+{txt}  09feb2021 {c |}{res}          2        0.43        8.80
+{txt}  10feb2021 {c |}{res}          1        0.21        9.01
+{txt}  11feb2021 {c |}{res}          2        0.43        9.44
+{txt}  15feb2021 {c |}{res}          2        0.43        9.87
+{txt}  16feb2021 {c |}{res}          3        0.64       10.52
+{txt}  18feb2021 {c |}{res}          2        0.43       10.94
+{txt}  19feb2021 {c |}{res}          1        0.21       11.16
+{txt}  20feb2021 {c |}{res}          1        0.21       11.37
+{txt}  22feb2021 {c |}{res}          3        0.64       12.02
+{txt}  23feb2021 {c |}{res}          3        0.64       12.66
+{txt}  24feb2021 {c |}{res}          1        0.21       12.88
+{txt}  25feb2021 {c |}{res}          1        0.21       13.09
+{txt}  26feb2021 {c |}{res}          1        0.21       13.30
+{txt}  27feb2021 {c |}{res}          1        0.21       13.52
+{txt}  04mar2021 {c |}{res}          1        0.21       13.73
+{txt}  05mar2021 {c |}{res}          1        0.21       13.95
+{txt}  07mar2021 {c |}{res}          1        0.21       14.16
+{txt}  10mar2021 {c |}{res}          2        0.43       14.59
+{txt}  12mar2021 {c |}{res}          2        0.43       15.02
+{txt}  14mar2021 {c |}{res}          1        0.21       15.24
+{txt}  15mar2021 {c |}{res}          2        0.43       15.67
+{txt}  16mar2021 {c |}{res}          1        0.21       15.88
+{txt}  19mar2021 {c |}{res}          1        0.21       16.09
+{txt}  20mar2021 {c |}{res}          1        0.21       16.31
+{txt}  23mar2021 {c |}{res}          2        0.43       16.74
+{txt}  24mar2021 {c |}{res}          2        0.43       17.17
+{txt}  25mar2021 {c |}{res}          2        0.43       17.60
+{txt}  26mar2021 {c |}{res}          2        0.43       18.03
+{txt}  27mar2021 {c |}{res}          1        0.21       18.24
+{txt}  28mar2021 {c |}{res}          1        0.21       18.45
+{txt}  31mar2021 {c |}{res}          3        0.64       19.10
+{txt}  01apr2021 {c |}{res}          4        0.86       19.96
+{txt}  02apr2021 {c |}{res}          1        0.21       20.17
+{txt}  04apr2021 {c |}{res}          1        0.21       20.39
+{txt}  05apr2021 {c |}{res}          2        0.43       20.82
+{txt}  06apr2021 {c |}{res}          2        0.43       21.24
+{txt}  07apr2021 {c |}{res}          1        0.21       21.46
+{txt}  08apr2021 {c |}{res}          2        0.43       21.89
+{txt}  09apr2021 {c |}{res}          2        0.43       22.32
+{txt}  10apr2021 {c |}{res}          1        0.21       22.53
+{txt}  12apr2021 {c |}{res}          1        0.21       22.75
+{txt}  13apr2021 {c |}{res}          1        0.21       22.96
+{txt}  14apr2021 {c |}{res}          3        0.64       23.61
+{txt}  15apr2021 {c |}{res}          2        0.43       24.03
+{txt}  16apr2021 {c |}{res}          2        0.43       24.46
+{txt}  17apr2021 {c |}{res}          1        0.21       24.68
+{txt}  18apr2021 {c |}{res}          2        0.43       25.11
+{txt}  19apr2021 {c |}{res}          2        0.43       25.54
+{txt}  20apr2021 {c |}{res}          2        0.43       25.97
+{txt}  21apr2021 {c |}{res}          2        0.43       26.39
+{txt}  22apr2021 {c |}{res}          3        0.64       27.04
+{txt}  23apr2021 {c |}{res}          1        0.21       27.25
+{txt}  24apr2021 {c |}{res}          2        0.43       27.68
+{txt}  26apr2021 {c |}{res}          1        0.21       27.90
+{txt}  27apr2021 {c |}{res}          3        0.64       28.54
+{txt}  29apr2021 {c |}{res}          1        0.21       28.76
+{txt}  30apr2021 {c |}{res}          3        0.64       29.40
+{txt}  01may2021 {c |}{res}          1        0.21       29.61
+{txt}  03may2021 {c |}{res}          1        0.21       29.83
+{txt}  05may2021 {c |}{res}          1        0.21       30.04
+{txt}  06may2021 {c |}{res}          4        0.86       30.90
+{txt}  07may2021 {c |}{res}          1        0.21       31.12
+{txt}  08may2021 {c |}{res}          1        0.21       31.33
+{txt}  10may2021 {c |}{res}          1        0.21       31.55
+{txt}  11may2021 {c |}{res}          2        0.43       31.97
+{txt}  12may2021 {c |}{res}          1        0.21       32.19
+{txt}  19may2021 {c |}{res}          1        0.21       32.40
+{txt}  20may2021 {c |}{res}          1        0.21       32.62
+{txt}  21may2021 {c |}{res}          3        0.64       33.26
+{txt}  22may2021 {c |}{res}          1        0.21       33.48
+{txt}  23may2021 {c |}{res}          1        0.21       33.69
+{txt}  24may2021 {c |}{res}          1        0.21       33.91
+{txt}  25may2021 {c |}{res}          3        0.64       34.55
+{txt}  26may2021 {c |}{res}          1        0.21       34.76
+{txt}  27may2021 {c |}{res}          1        0.21       34.98
+{txt}  28may2021 {c |}{res}          1        0.21       35.19
+{txt}  29may2021 {c |}{res}          1        0.21       35.41
+{txt}  31may2021 {c |}{res}          2        0.43       35.84
+{txt}  01jun2021 {c |}{res}          1        0.21       36.05
+{txt}  02jun2021 {c |}{res}          2        0.43       36.48
+{txt}  03jun2021 {c |}{res}          1        0.21       36.70
+{txt}  05jun2021 {c |}{res}          2        0.43       37.12
+{txt}  07jun2021 {c |}{res}          2        0.43       37.55
+{txt}  08jun2021 {c |}{res}          2        0.43       37.98
+{txt}  09jun2021 {c |}{res}          1        0.21       38.20
+{txt}  10jun2021 {c |}{res}          2        0.43       38.63
+{txt}  11jun2021 {c |}{res}          2        0.43       39.06
+{txt}  12jun2021 {c |}{res}          1        0.21       39.27
+{txt}  14jun2021 {c |}{res}          1        0.21       39.48
+{txt}  15jun2021 {c |}{res}          2        0.43       39.91
+{txt}  16jun2021 {c |}{res}          1        0.21       40.13
+{txt}  17jun2021 {c |}{res}          2        0.43       40.56
+{txt}  18jun2021 {c |}{res}          2        0.43       40.99
+{txt}  19jun2021 {c |}{res}          3        0.64       41.63
+{txt}  20jun2021 {c |}{res}          1        0.21       41.85
+{txt}  21jun2021 {c |}{res}          3        0.64       42.49
+{txt}  22jun2021 {c |}{res}          4        0.86       43.35
+{txt}  23jun2021 {c |}{res}          2        0.43       43.78
+{txt}  24jun2021 {c |}{res}          1        0.21       43.99
+{txt}  25jun2021 {c |}{res}          3        0.64       44.64
+{txt}  26jun2021 {c |}{res}          2        0.43       45.06
+{txt}  27jun2021 {c |}{res}          1        0.21       45.28
+{txt}  28jun2021 {c |}{res}          3        0.64       45.92
+{txt}  29jun2021 {c |}{res}          2        0.43       46.35
+{txt}  30jun2021 {c |}{res}          3        0.64       47.00
+{txt}  01jul2021 {c |}{res}          2        0.43       47.42
+{txt}  02jul2021 {c |}{res}          3        0.64       48.07
+{txt}  03jul2021 {c |}{res}          1        0.21       48.28
+{txt}  04jul2021 {c |}{res}          2        0.43       48.71
+{txt}  05jul2021 {c |}{res}          2        0.43       49.14
+{txt}  06jul2021 {c |}{res}          1        0.21       49.36
+{txt}  07jul2021 {c |}{res}          2        0.43       49.79
+{txt}  08jul2021 {c |}{res}          1        0.21       50.00
+{txt}  09jul2021 {c |}{res}          3        0.64       50.64
+{txt}  12jul2021 {c |}{res}          2        0.43       51.07
+{txt}  13jul2021 {c |}{res}          2        0.43       51.50
+{txt}  14jul2021 {c |}{res}          1        0.21       51.72
+{txt}  16jul2021 {c |}{res}          1        0.21       51.93
+{txt}  17jul2021 {c |}{res}          2        0.43       52.36
+{txt}  19jul2021 {c |}{res}          2        0.43       52.79
+{txt}  20jul2021 {c |}{res}          1        0.21       53.00
+{txt}  22jul2021 {c |}{res}          2        0.43       53.43
+{txt}  23jul2021 {c |}{res}          1        0.21       53.65
+{txt}  24jul2021 {c |}{res}          3        0.64       54.29
+{txt}  26jul2021 {c |}{res}          1        0.21       54.51
+{txt}  27jul2021 {c |}{res}          2        0.43       54.94
+{txt}  28jul2021 {c |}{res}          1        0.21       55.15
+{txt}  29jul2021 {c |}{res}          1        0.21       55.36
+{txt}  30jul2021 {c |}{res}          3        0.64       56.01
+{txt}  02aug2021 {c |}{res}          3        0.64       56.65
+{txt}  04aug2021 {c |}{res}          2        0.43       57.08
+{txt}  05aug2021 {c |}{res}          1        0.21       57.30
+{txt}  06aug2021 {c |}{res}          1        0.21       57.51
+{txt}  07aug2021 {c |}{res}          2        0.43       57.94
+{txt}  12aug2021 {c |}{res}          2        0.43       58.37
+{txt}  15aug2021 {c |}{res}          1        0.21       58.58
+{txt}  16aug2021 {c |}{res}          1        0.21       58.80
+{txt}  19aug2021 {c |}{res}          1        0.21       59.01
+{txt}  20aug2021 {c |}{res}          3        0.64       59.66
+{txt}  21aug2021 {c |}{res}          1        0.21       59.87
+{txt}  22aug2021 {c |}{res}          1        0.21       60.09
+{txt}  23aug2021 {c |}{res}          4        0.86       60.94
+{txt}  24aug2021 {c |}{res}          1        0.21       61.16
+{txt}  25aug2021 {c |}{res}          1        0.21       61.37
+{txt}  27aug2021 {c |}{res}          1        0.21       61.59
+{txt}  28aug2021 {c |}{res}          2        0.43       62.02
+{txt}  29aug2021 {c |}{res}          1        0.21       62.23
+{txt}  30aug2021 {c |}{res}          1        0.21       62.45
+{txt}  31aug2021 {c |}{res}          2        0.43       62.88
+{txt}  01sep2021 {c |}{res}          2        0.43       63.30
+{txt}  02sep2021 {c |}{res}          2        0.43       63.73
+{txt}  03sep2021 {c |}{res}          1        0.21       63.95
+{txt}  04sep2021 {c |}{res}          1        0.21       64.16
+{txt}  06sep2021 {c |}{res}          1        0.21       64.38
+{txt}  07sep2021 {c |}{res}          2        0.43       64.81
+{txt}  10sep2021 {c |}{res}          1        0.21       65.02
+{txt}  11sep2021 {c |}{res}          2        0.43       65.45
+{txt}  12sep2021 {c |}{res}          1        0.21       65.67
+{txt}  13sep2021 {c |}{res}          1        0.21       65.88
+{txt}  14sep2021 {c |}{res}          1        0.21       66.09
+{txt}  15sep2021 {c |}{res}          2        0.43       66.52
+{txt}  17sep2021 {c |}{res}          2        0.43       66.95
+{txt}  19sep2021 {c |}{res}          1        0.21       67.17
+{txt}  20sep2021 {c |}{res}          2        0.43       67.60
+{txt}  21sep2021 {c |}{res}          1        0.21       67.81
+{txt}  22sep2021 {c |}{res}          1        0.21       68.03
+{txt}  23sep2021 {c |}{res}          1        0.21       68.24
+{txt}  24sep2021 {c |}{res}          2        0.43       68.67
+{txt}  27sep2021 {c |}{res}          1        0.21       68.88
+{txt}  28sep2021 {c |}{res}          1        0.21       69.10
+{txt}  29sep2021 {c |}{res}          2        0.43       69.53
+{txt}  30sep2021 {c |}{res}          1        0.21       69.74
+{txt}  01oct2021 {c |}{res}          2        0.43       70.17
+{txt}  02oct2021 {c |}{res}          2        0.43       70.60
+{txt}  05oct2021 {c |}{res}          1        0.21       70.82
+{txt}  06oct2021 {c |}{res}          3        0.64       71.46
+{txt}  08oct2021 {c |}{res}          1        0.21       71.67
+{txt}  09oct2021 {c |}{res}          1        0.21       71.89
+{txt}  10oct2021 {c |}{res}          1        0.21       72.10
+{txt}  11oct2021 {c |}{res}          3        0.64       72.75
+{txt}  12oct2021 {c |}{res}          1        0.21       72.96
+{txt}  13oct2021 {c |}{res}          2        0.43       73.39
+{txt}  14oct2021 {c |}{res}          1        0.21       73.61
+{txt}  15oct2021 {c |}{res}          3        0.64       74.25
+{txt}  17oct2021 {c |}{res}          1        0.21       74.46
+{txt}  18oct2021 {c |}{res}          1        0.21       74.68
+{txt}  19oct2021 {c |}{res}          1        0.21       74.89
+{txt}  20oct2021 {c |}{res}          2        0.43       75.32
+{txt}  21oct2021 {c |}{res}          3        0.64       75.97
+{txt}  22oct2021 {c |}{res}          4        0.86       76.82
+{txt}  23oct2021 {c |}{res}          2        0.43       77.25
+{txt}  24oct2021 {c |}{res}          1        0.21       77.47
+{txt}  25oct2021 {c |}{res}          3        0.64       78.11
+{txt}  26oct2021 {c |}{res}          4        0.86       78.97
+{txt}  27oct2021 {c |}{res}          2        0.43       79.40
+{txt}  28oct2021 {c |}{res}          1        0.21       79.61
+{txt}  29oct2021 {c |}{res}          1        0.21       79.83
+{txt}  01nov2021 {c |}{res}          2        0.43       80.26
+{txt}  02nov2021 {c |}{res}          2        0.43       80.69
+{txt}  03nov2021 {c |}{res}          3        0.64       81.33
+{txt}  04nov2021 {c |}{res}          2        0.43       81.76
+{txt}  06nov2021 {c |}{res}          2        0.43       82.19
+{txt}  07nov2021 {c |}{res}          2        0.43       82.62
+{txt}  08nov2021 {c |}{res}          2        0.43       83.05
+{txt}  09nov2021 {c |}{res}          2        0.43       83.48
+{txt}  10nov2021 {c |}{res}          2        0.43       83.91
+{txt}  11nov2021 {c |}{res}          2        0.43       84.33
+{txt}  13nov2021 {c |}{res}          1        0.21       84.55
+{txt}  14nov2021 {c |}{res}          1        0.21       84.76
+{txt}  15nov2021 {c |}{res}          2        0.43       85.19
+{txt}  16nov2021 {c |}{res}          1        0.21       85.41
+{txt}  17nov2021 {c |}{res}          3        0.64       86.05
+{txt}  18nov2021 {c |}{res}          3        0.64       86.70
+{txt}  21nov2021 {c |}{res}          1        0.21       86.91
+{txt}  23nov2021 {c |}{res}          3        0.64       87.55
+{txt}  24nov2021 {c |}{res}          1        0.21       87.77
+{txt}  25nov2021 {c |}{res}          4        0.86       88.63
+{txt}  27nov2021 {c |}{res}          1        0.21       88.84
+{txt}  29nov2021 {c |}{res}          1        0.21       89.06
+{txt}  30nov2021 {c |}{res}          1        0.21       89.27
+{txt}  01dec2021 {c |}{res}          2        0.43       89.70
+{txt}  02dec2021 {c |}{res}          2        0.43       90.13
+{txt}  03dec2021 {c |}{res}          2        0.43       90.56
+{txt}  04dec2021 {c |}{res}          1        0.21       90.77
+{txt}  05dec2021 {c |}{res}          1        0.21       90.99
+{txt}  06dec2021 {c |}{res}          3        0.64       91.63
+{txt}  07dec2021 {c |}{res}          2        0.43       92.06
+{txt}  08dec2021 {c |}{res}          1        0.21       92.27
+{txt}  09dec2021 {c |}{res}          2        0.43       92.70
+{txt}  10dec2021 {c |}{res}          4        0.86       93.56
+{txt}  11dec2021 {c |}{res}          2        0.43       93.99
+{txt}  14dec2021 {c |}{res}          1        0.21       94.21
+{txt}  15dec2021 {c |}{res}          1        0.21       94.42
+{txt}  16dec2021 {c |}{res}          1        0.21       94.64
+{txt}  17dec2021 {c |}{res}          2        0.43       95.06
+{txt}  18dec2021 {c |}{res}          3        0.64       95.71
+{txt}  19dec2021 {c |}{res}          1        0.21       95.92
+{txt}  20dec2021 {c |}{res}          1        0.21       96.14
+{txt}  21dec2021 {c |}{res}          1        0.21       96.35
+{txt}  22dec2021 {c |}{res}          2        0.43       96.78
+{txt}  23dec2021 {c |}{res}          2        0.43       97.21
+{txt}  24dec2021 {c |}{res}          2        0.43       97.64
+{txt}  25dec2021 {c |}{res}          2        0.43       98.07
+{txt}  27dec2021 {c |}{res}          3        0.64       98.71
+{txt}  29dec2021 {c |}{res}          2        0.43       99.14
+{txt}  30dec2021 {c |}{res}          3        0.64       99.79
+{txt}  31dec2021 {c |}{res}          1        0.21      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        466      100.00
+{txt}
+{com}. 
+. *keep if FKL04 == 01dec2021
+. *keep if FKL04 == 01122021
+. 
+. *keep if FKL04 == 01122021 | FKL04 == 02122021 | FKL04 == 03122021 | FKL04 == 04122021 | FKL04 == 05122021 | FKL04 == 06122021 | FKL04 == 07122021 | FKL04 == 08122021 | FKL04 == 09122021 | FKL04 == 10122021 | FKL04 == 11122021 | FKL04 == 12122021 | FKL04 == 13122021 | FKL04 == 14122021 | FKL04 == 15122021 | FKL04 == 16122021 | FKL04 == 17122021 | FKL04 == 18122021 | FKL04 == 19122021 | FKL04 == 20122021 | FKL04 == 21122021 | FKL04 == 22122021 | FKL04 == 23122021 | FKL04 == 24122021 | FKL04 == 25122021 | FKL04 == 26122021 | FKL04 == 27122021 | FKL04 == 28122021 | FKL04 == 29122021 | FKL04 == 30122021 | FKL04 == 31122021
+. 
+. // encode FKL04, gen(FKL04encode)
+. gen strFKL04 = string(FKL04,"%td")
+{txt}
+{com}. 
+. *tostring FKL04, gen(FKL04str)
+. gen year = substr(strFKL04,-7,7) 
+{txt}
+{com}. gen month = substr(strFKL04,3,3) 
+{txt}
+{com}. keep if month == "dec"
+{txt}(416 observations deleted)
+
+{com}. 
+. *drop FKL04str
+. drop strFKL04 year month
+{txt}
+{com}. 
+. ta FKL04
+
+    {txt}Tanggal {c |}
+     pulang {c |}
+  kunjungan {c |}
+      FKRTL {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+  01dec2021 {c |}{res}          2        4.00        4.00
+{txt}  02dec2021 {c |}{res}          2        4.00        8.00
+{txt}  03dec2021 {c |}{res}          2        4.00       12.00
+{txt}  04dec2021 {c |}{res}          1        2.00       14.00
+{txt}  05dec2021 {c |}{res}          1        2.00       16.00
+{txt}  06dec2021 {c |}{res}          3        6.00       22.00
+{txt}  07dec2021 {c |}{res}          2        4.00       26.00
+{txt}  08dec2021 {c |}{res}          1        2.00       28.00
+{txt}  09dec2021 {c |}{res}          2        4.00       32.00
+{txt}  10dec2021 {c |}{res}          4        8.00       40.00
+{txt}  11dec2021 {c |}{res}          2        4.00       44.00
+{txt}  14dec2021 {c |}{res}          1        2.00       46.00
+{txt}  15dec2021 {c |}{res}          1        2.00       48.00
+{txt}  16dec2021 {c |}{res}          1        2.00       50.00
+{txt}  17dec2021 {c |}{res}          2        4.00       54.00
+{txt}  18dec2021 {c |}{res}          3        6.00       60.00
+{txt}  19dec2021 {c |}{res}          1        2.00       62.00
+{txt}  20dec2021 {c |}{res}          1        2.00       64.00
+{txt}  21dec2021 {c |}{res}          1        2.00       66.00
+{txt}  22dec2021 {c |}{res}          2        4.00       70.00
+{txt}  23dec2021 {c |}{res}          2        4.00       74.00
+{txt}  24dec2021 {c |}{res}          2        4.00       78.00
+{txt}  25dec2021 {c |}{res}          2        4.00       82.00
+{txt}  27dec2021 {c |}{res}          3        6.00       88.00
+{txt}  29dec2021 {c |}{res}          2        4.00       92.00
+{txt}  30dec2021 {c |}{res}          3        6.00       98.00
+{txt}  31dec2021 {c |}{res}          1        2.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         50      100.00
+{txt}
+{com}. su FKL04
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 7}FKL04 {c |}{res}         50    22629.64    9.367246      22615      22645
+{txt}
+{com}. codebook FKL04
+
+{txt}{hline}
+{res}FKL04{right:Tanggal pulang kunjungan FKRTL}
+{txt}{hline}
+
+{col 19}Type: Numeric daily date ({res}int{txt})
+
+{col 18}Range: [{res}22615{txt},{res}22645{txt}]{col 55}Units: {res}1
+{col 8}{txt}Or equivalently: [{res}01dec2021{txt},{res}31dec2021{txt}]{col 55}Units: {res}days
+{col 10}{txt}Unique values: {res}27{col 51}{txt}Missing .: {res}0{txt}/{res}50
+
+{txt}{col 19}Mean: {res}{ralign 7:22629.6}{txt} = {res}15dec2021{txt}(+ 15 hours)
+{col 14}Std. dev.: {res}{ralign 7:9.36725}
+{txt}{col 12}Percentiles: {col 25}{ralign 9:10%}{ralign 11:25%}{ralign 11:50%}{ralign 11:75%}{ralign 11:90%}
+{res}{col 25}{ralign 9:22617}{ralign 11:   22621}{ralign 11: 22630.5}{ralign 11:   22638}{ralign 11:   22643}
+{col 25}{ralign 9:03dec2021}{ralign 11:07dec2021}{ralign 11:16dec2021}{ralign 11:24dec2021}{ralign 11:29dec2021}
+{txt}
+{com}. 
+. gen FKL06jkt = 1
+{txt}
+{com}. la def FKL06jktL 1"KOTA JAKARTA"
+{txt}
+{com}. la val FKL06jkt FKL06jktL
+{txt}
+{com}. 
+. *FKL06
+. 
+. collapse (sum) PSTV15 FKL48PSTV15, by (FKL04 FKL05 FKL06jkt)
+{res}{txt}
+{com}. 
+. ren FKL06jkt FKL06
+{res}{txt}
+{com}. 
+. save "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout 1 province.dta", replace
+{txt}{p 0 4 2}
+file {bf}
+D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout 1 province.dta{rm}
+saved
+{p_end}
+
+{com}. 
+. *append 6 cities + 1 province
+. 
+. use "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout 6cities yogyatosleman.dta", clear
+{txt}(BPJS Kesehatan 2021 FKRTL - created:  9 Dec 2022 09:33:49)
+
+{com}. 
+. append using "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout 1 province.dta"
+{txt}{p 0 7 2}
+(variable
+{bf:FKL06} was {bf:int}, now {bf:float} to accommodate using data's values)
+{p_end}
+(label {bf:{txt}FKL05} already defined)
+
+{com}. 
+. la def FKL06L 1"KOTA JAKARTA" 1275      "KOTA MEDAN" 3171       "KOTA JAKARTA SELATAN" 3172     "KOTA JAKARTA TIMUR" 3173       "KOTA JAKARTA PUSAT" 3174       "KOTA JAKARTA BARAT" 3175       "KOTA JAKARTA UTARA" 3273       "KOTA BANDUNG" 3276     "KOTA DEPOK" 3404 "SLEMAN" 3578 "KOTA SURABAYA"  5171   "KOTA DENPASAR"
+{txt}
+{com}. // 3471 "KOTA YOGYAKARTA"
+. la val FKL06 FKL06L
+{txt}
+{com}. 
+. save "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout 6cities1prov yogyatosleman.dta", replace
+{txt}{p 0 4 2}
+file {bf}
+D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout 6cities1prov yogyatosleman.dta{rm}
+saved
+{p_end}
+
+{com}. 
+. su FKL04
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 7}FKL04 {c |}{res}        114    22630.28    9.148247      22615      22645
+{txt}
+{com}. codebook FKL04
+
+{txt}{hline}
+{res}FKL04{right:Tanggal pulang kunjungan FKRTL}
+{txt}{hline}
+
+{col 19}Type: Numeric daily date ({res}int{txt})
+
+{col 18}Range: [{res}22615{txt},{res}22645{txt}]{col 55}Units: {res}1
+{col 8}{txt}Or equivalently: [{res}01dec2021{txt},{res}31dec2021{txt}]{col 55}Units: {res}days
+{col 10}{txt}Unique values: {res}30{col 51}{txt}Missing .: {res}0{txt}/{res}114
+
+{txt}{col 19}Mean: {res}{ralign 7:22630.3}{txt} = {res}16dec2021{txt}(+ 7 hours)
+{col 14}Std. dev.: {res}{ralign 7:9.14825}
+{txt}{col 12}Percentiles: {col 25}{ralign 9:10%}{ralign 11:25%}{ralign 11:50%}{ralign 11:75%}{ralign 11:90%}
+{res}{col 25}{ralign 9:22617}{ralign 11:   22622}{ralign 11: 22631.5}{ralign 11:   22638}{ralign 11:   22642}
+{col 25}{ralign 9:03dec2021}{ralign 11:08dec2021}{ralign 11:17dec2021}{ralign 11:24dec2021}{ralign 11:28dec2021}
+{txt}
+{com}. 
+. export excel using "D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout 6cities1prov yogyatosleman.xlsx", sheet("data rs frktl") firstrow(variables) replace
+{res}{txt}file {bf:D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout 6cities1prov yogyatosleman.xlsx} saved
+
+{com}.                                         
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}D:\Software Engineering\RevoU - Fullstack Software Engineering (FSSE)\FSSE\Milestone 5 Week 23,24&25 Final Project\202103_fkrtl-respiratory biayabobot 36citiesdist dateout 6cities1prov yogyatosleman.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 8 Dec 2023, 09:27:11
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
