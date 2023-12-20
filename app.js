@@ -47,6 +47,10 @@ fetch(apiUrl)
 // AQI US (aqius): 122
 // Coordinates: [ 107.60694, -6.92222 ]
 
+// Timestamp (ts): 2023-12-20T19:00:00.000Z
+// AQI US (aqius): 105
+// Coordinates: [ 107.60694, -6.92222 ]
+
 // Surabaya East Java Indonesia (KLHK, LMJAELANI.com, RespoKare Mask Stations) https://www.iqair.com/id/indonesia/east-java/surabaya
 
 // Timestamp (ts): 2023-12-07T18:00:00.000Z
@@ -61,6 +65,10 @@ fetch(apiUrl)
 
 // Timestamp (ts): 2023-12-19T23:00:00.000Z
 // AQI US (aqius): 92
+// Coordinates: [ 112.7946058, -7.2800904 ]
+
+// Timestamp (ts): 2023-12-20T19:00:00.000Z
+// AQI US (aqius): 71
 // Coordinates: [ 112.7946058, -7.2800904 ]
 
 // Medan North Sumatra Indonesia (DLH Medan 02, KLHK Station) https://www.iqair.com/indonesia/north-sumatra/medan/dlh-medan-02
@@ -79,6 +87,10 @@ fetch(apiUrl)
 // AQI US (aqius): 90
 // Coordinates: [ 98.6722227, 3.5951956 ]
 
+// Timestamp (ts): 2023-12-20T19:00:00.000Z
+// AQI US (aqius): 74
+// Coordinates: [ 98.6722227, 3.5951956 ]
+
 // Jakarta Jakarta Indonesia (KLHK, BMKG, + 38 Other Station) https://www.iqair.com/id/indonesia/jakarta
 
 // Timestamp (ts): 2023-12-07T18:00:00.000Z
@@ -93,6 +105,10 @@ fetch(apiUrl)
 
 // Timestamp (ts): 2023-12-19T23:00:00.000Z
 // AQI US (aqius): 98
+// Coordinates: [ 106.79324, -6.236704 ]
+
+// Timestamp (ts): 2023-12-20T19:00:00.000Z
+// AQI US (aqius): 95
 // Coordinates: [ 106.79324, -6.236704 ]
 
 // Sleman Yogyakarta Indonesia (BMKG Station), Yogyakarta CIty Has No Station https://www.iqair.com/indonesia/yogyakarta/sleman/sleman-station https://www.iqair.com/id/indonesia/yogyakarta
@@ -111,6 +127,10 @@ fetch(apiUrl)
 // AQI US (aqius): 59
 // Coordinates: [ 110.35556, -7.71556 ]
 
+// Timestamp (ts): 2023-12-20T18:00:00.000Z
+// AQI US (aqius): 72
+// Coordinates: [ 110.35556, -7.71556 ]
+
 // Depok West Java Indonesia (No Station? PT. Cakra Anugerah Jaya) https://www.iqair.com/id/indonesia/west-java/depok
 
 // Timestamp (ts): 2023-12-07T18:00:00.000Z
@@ -125,6 +145,10 @@ fetch(apiUrl)
 
 // Timestamp (ts): 2023-12-19T22:00:00.000Z
 // AQI US (aqius): 50
+// Coordinates: [ 106.81861, -6.4 ]
+
+// Timestamp (ts): 2023-12-20T19:00:00.000Z
+// AQI US (aqius): 72
 // Coordinates: [ 106.81861, -6.4 ]
 
 // Denpasar Bali Indonesia (KLHK Station + Lumi Clinic, Smart Energy Technology, nasi_goreng_87) https://www.iqair.com/id/indonesia/bali/denpasar
@@ -143,6 +167,10 @@ fetch(apiUrl)
 // AQI US (aqius): 119
 // Coordinates: [ 115.19754, -8.663225 ]
 
+// Timestamp (ts): 2023-12-20T19:00:00.000Z
+// AQI US (aqius): 66
+// Coordinates: [ 115.19754, -8.663225 ]
+
 // Bekasi West Java Indonesia (KLHK Station) https://www.iqair.com/id/indonesia/west-java/bekasi
 
 // Timestamp (ts): 2023-12-07T18:00:00.000Z
@@ -157,6 +185,10 @@ fetch(apiUrl)
 
 // Timestamp (ts): 2023-12-18T21:00:00.000Z
 // AQI US (aqius): 85
+// Coordinates: [ 106.913972, -6.388776 ]
+
+// Timestamp (ts): 2023-12-20T19:00:00.000Z
+// AQI US (aqius): 65
 // Coordinates: [ 106.913972, -6.388776 ]
 
 // Makassar South Sulawesi Indonesia (RespoKare Mask Ruko Metro Square Station) https://www.iqair.com/id/indonesia/south-sulawesi/makassar
@@ -175,6 +207,10 @@ fetch(apiUrl)
 // AQI US (aqius): 53
 // Coordinates: [ 119.43194, -5.14861 ]
 
+// Timestamp (ts): 2023-12-20T19:00:00.000Z
+// AQI US (aqius): 68
+// Coordinates: [ 119.43194, -5.14861 ]
+
 // Palembang South Sumatra Indonesia (KLHK Station) https://www.iqair.com/id/indonesia/south-sumatra/palembang
 
 // Timestamp (ts): 2023-12-07T19:00:00.000Z
@@ -191,6 +227,10 @@ fetch(apiUrl)
 // AQI US (aqius): 61
 // Coordinates: [ 104.7754307, -2.9760735 ]
 
+// Timestamp (ts): 2023-12-20T19:00:00.000Z
+// AQI US (aqius): 94
+// Coordinates: [ 104.7754307, -2.9760735 ]
+
 // Batam Riau Islands Indonesia (KLHK BMKG Station) https://www.iqair.com/id/indonesia/riau-islands/batam
 
 // Timestamp (ts): 2023-12-07T18:00:00.000Z
@@ -204,6 +244,10 @@ fetch(apiUrl)
 // Coordinates: [ 104.05292069999996, 1.1300779 ]
 
 // Timestamp (ts): 2023-12-19T22:00:00.000Z
+// AQI US (aqius): 71
+// Coordinates: [ 104.05292069999996, 1.1300779 ]
+
+// Timestamp (ts): 2023-12-20T19:00:00.000Z
 // AQI US (aqius): 71
 // Coordinates: [ 104.05292069999996, 1.1300779 ]
 
